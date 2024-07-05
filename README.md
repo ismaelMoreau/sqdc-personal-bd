@@ -1,0 +1,1 @@
+# Sqdc personal bd
