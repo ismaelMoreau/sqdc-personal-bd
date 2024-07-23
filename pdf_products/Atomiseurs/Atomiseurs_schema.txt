@@ -1,0 +1,80 @@
+Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des atomiseurs de cannabis, en mettant l'accent sur la richesse des données.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "produit": {
+      "type": "string",
+      "description": "Nom du produit"
+    },
+    "marque": {
+      "type": "string",
+      "description": "Marque du produit"
+    },
+    "format": {
+      "type": "number",
+      "description": "Volume net du produit en ml"
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Liste des ingrédients"
+    },
+    "extraction": {
+      "type": "string",
+      "description": "Méthode d'extraction utilisée"
+    },
+    "dosage": {
+      "type": "string",
+      "description": "Dosage recommandé par activation"
+    },
+    "effets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Effets potentiels du produit"
+    },
+    "temps_apparition": {
+      "type": "string",
+      "description": "Temps d'apparition des effets"
+    },
+    "production": {
+      "type": "string",
+      "description": "Informations sur la production du produit"
+    },
+    "mise_en_garde": {
+      "type": "string",
+      "description": "Mise en garde concernant l'utilisation"
+    }
+  },
+  "required": [
+    "produit",
+    "marque",
+    "format",
+    "ingredients",
+    "extraction",
+    "dosage",
+    "effets",
+    "temps_apparition"
+  ]
+}
+```
+
+### Explication des champs :
+
+- **produit** : Nom de l'atomiseur (ex. "CBD 2000").
+- **marque** : Marque ou entreprise qui produit l'atomiseur (ex. "EXKA").
+- **format** : Volume net du produit en millilitres (ex. 15 ml, 20 ml).
+- **ingredients** : Liste des ingrédients utilisés dans le produit (ex. "huile de coco", "extrait de cannabis").
+- **extraction** : Méthode d'extraction (ex. "éthanol cryogénique", "CO2").
+- **dosage** : Dosage recommandé par activation (ex. "0.1 ml par activation").
+- **effets** : Liste des effets potentiels (ex. "Relaxation", "Énergie").
+- **temps_apparition** : Temps nécessaire pour que les effets apparaissent (ex. "30 minutes").
+- **production** : Informations sur la production, comme le lieu et les méthodes.
+- **mise_en_garde** : Avertissements concernant l'utilisation du produit.
+
+Ce schéma peut être utilisé pour structurer les données dans une base de données MongoDB, facilitant ainsi la gestion et la recherche d'informations sur les atomiseurs de cannabis.

@@ -1,0 +1,145 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "_id",
+      "nom",
+      "type_de_produit",
+      "catégorie",
+      "varieté",
+      "couleur",
+      "arôme",
+      "goût",
+      "temps_de_récolte",
+      "méthode_de_culture",
+      "taux_de_THC",
+      "taux_de_CBD",
+      "effet_principal",
+      "effets_secondaires",
+      "avertissement",
+      "producteur",
+      "adresseFabriquée",
+      "telephone",
+      "website",
+      "indication_geographique",
+      "méthode_de_consommation_recommandée",
+      "instructions",
+      "usage",
+      "contenu",
+      "quantite",
+      "prix",
+      "utilisationConseillée",
+      "durée_culture",
+      "terpènes",
+      "partie_de_la_plante_utilisée",
+      "temps_d_effet",
+      "version",
+      "poidsNet",
+      "description"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "string"
+      },
+      "nom": {
+        "bsonType": "string"
+      },
+      "type_de_produit": {
+        "bsonType": "string"
+      },
+      "catégorie": {
+        "bsonType": "string"
+      },
+      "variété": {
+        "bsonType": "string"
+      },
+      "couleur": {
+        "bsonType": "string"
+      },
+      "arôme": {
+        "bsonType": "string"
+      },
+      "goût": {
+        "bsonType": "string"
+      },
+      "temps_de_récolte": {
+        "bsonType": "string"
+      },
+      "méthode_de_culture": {
+        "bsonType": "string"
+      },
+      "taux_de_THC": {
+        "bsonType": "string"
+      },
+      "taux_de_CBD": {
+        "bsonType": "string"
+      },
+      "effet_principal": {
+        "bsonType": "string"
+      },
+      "effets_secondaires": {
+        "bsonType": "string"
+      },
+      "avertissement": {
+        "bsonType": "string"
+      },
+      "producteur": {
+        "bsonType": "string"
+      },
+      "adresseFabriquée": {
+        "bsonType": "string"
+      },
+      "telephone": {
+        "bsonType": "string"
+      },
+      "website": {
+        "bsonType": "string"
+      },
+      "indication_geographique": {
+        "bsonType": "string"
+      },
+      "méthode_de_consommation_recommandée": {
+        "bsonType": "string"
+      },
+      "instructions": {
+        "bsonType": "string"
+      },
+      "usage": {
+        "bsonType": "string"
+      },
+      "contenu": {
+        "bsonType": "string"
+      },
+      "quantite": {
+        "bsonType": "string"
+      },
+      "prix": {
+        "bsonType": "string"
+      },
+      "utilisationConseillée": {
+        "bsonType": "string"
+      },
+      "durée_culture": {
+        "bsonType": "string"
+      },
+      "terpènes": {
+        "bsonType": "string"
+      },
+      "partie_de_la_plante_utilisée": {
+        "bsonType": "string"
+      },
+      "temps_d_effet": {
+        "bsonType": "string"
+      },
+      "version": {
+        "bsonType": "string"
+      },
+      "poidsNet": {
+        "bsonType": "string"
+      },
+      "description": {
+        "bsonType": "string"
+      }
+    }
+  }
+}

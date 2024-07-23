@@ -1,0 +1,1133 @@
+La collection 'Autres Comestibles' existe déjà.
+La collection 'Huiles' existe déjà.
+La collection 'Boissons' existe déjà.
+La collection 'Pré-roulés Sativa' existe déjà.
+La collection 'Fleurs Séchées  1g' existe déjà.
+La collection 'Fleurs Séchées Indica 3.5g' existe déjà.
+Le nombre d'entree de la collection 'Fleurs Séchées Indica 3.5g' ne correspond pas au nombre de png.
+Data of Dough Lato - 671148011069.png inserted successfully.
+Data of Wes' Coast Kush - 628518000505.png inserted successfully.
+Data of Holy Grail Kush - 628242321303.png inserted successfully.
+Data of Sourdough - 628582001934.png inserted successfully.
+Data of Cobra Milk - 671148401488.png inserted successfully.
+Data of Powdered Donuts #8 - 628011959140.png inserted successfully.
+Data of Watermelon OG - 671148409910.png inserted successfully.
+Data of Cool Grape - 628069580112.png inserted successfully.
+Data of Holy Kush - 628011959485.png inserted successfully.
+Data of Death Star - 824164002942.png inserted successfully.
+Data of Chocolate Cream Cookies - 688083014574.png inserted successfully.
+Data of Chemango Kush.PNG inserted successfully.
+Data of Blueberry Kush.png inserted successfully.
+Data of Blackberry Gelato - 628639001467.png inserted successfully.
+Data of Pink Diesel - 628582002429.png inserted successfully.
+Data of Chem Cookies #44 - 628011959225.png inserted successfully.
+Data of Rvntz - 671148011021.png inserted successfully.
+Data of GMO Cookies - 841432010584.png inserted successfully.
+Data of Gold Butter MAC Bio - 827763002962.png inserted successfully.
+Data of M39.PNG inserted successfully.
+Data of Mac Chiquita - 628693095334.png inserted successfully.
+Data of Avignon - 628518000090.png inserted successfully.
+Data of Marmalade Punch - 820939003114.png inserted successfully.
+Data of OG Kush - 827885011613.png inserted successfully.
+Data of Monkey Butter - 694144014193.png inserted successfully.
+Data of Atomic Sour Grapefruit - 841432010676.png inserted successfully.
+Data of Cactus Funk Breath.PNG inserted successfully.
+Data of Galactic Rntz - 628124835331.png inserted successfully.
+Data of Papaya Bomb - 628942597640.png inserted successfully.
+Data of Greasy Pink - 824164002935.png inserted successfully.
+Data of Kim's Cake.PNG inserted successfully.
+Data of Grand Daddy Purps - 694144008611.png inserted successfully.
+No Data extracted for Citrine Kush - 628011959317.png
+An error occurred while inserting data of Citrine Kush - 628011959317.png: E11000 duplicate key error collection: sqdc_quaie.Fleurs Séchées Indica 3.5g index: _id_ dup key: { _id: ObjectId('66957f7177eb553a24c891c9') }, full error: {'index': 0, 'code': 11000, 'errmsg': "E11000 duplicate key error collection: sqdc_quaie.Fleurs Séchées Indica 3.5g index: _id_ dup key: { _id: ObjectId('66957f7177eb553a24c891c9') }", 'keyPattern': {'_id': 1}, 'keyValue': {'_id': ObjectId('66957f7177eb553a24c891c9')}}
+Data of Space Cake - 628242801959.png inserted successfully.
+Data of Stinky Pinky - 628693377799.png inserted successfully.
+Data of Sky Cuddler Kush Bio - 628011336668.png inserted successfully.
+Data of Planet of the Grapes - 628634099216.png inserted successfully.
+Data of Jealousy - 628693095341.png inserted successfully.
+Data of BC Purple Kush - 824164004311.png inserted successfully.
+Data of Rockstar Tuna Bio - 827763002641.png inserted successfully.
+Data of Purple Kush.PNG inserted successfully.
+Data of Tiger Cake - 688083011955.png inserted successfully.
+Data of Mikey's Diamond - 628176622958.png inserted successfully.
+Data of Zombie Rasta - 620376135214.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "PINK KUSH",
+  "marque": "GCGold Tech",
+  "variété": "OG Kush x Inconnue",
+  "type": "Indica",
+  "quantité": "3,5 gr",
+  "caractéristiques": [
+    "Cultivé 100% Québec",
+    "Culture et Sécheur sur l'Île Brossard",
+    "Récolte contrôlée automatiquement dans une chambre de fermentation",
+    "48 heures avant l'emballage"
+  ],
+  "effets_potentiels": [
+    "Relaxant",
+    "Euphorie",
+    "Sensations accrues"
+  ],
+  "avertissement": "Ne conduisez pas un opérez pas de machinerie lourde après avoir consommé du cannabis"
+}
+Data of Sugar Cookies - 820939002476.png inserted successfully.
+Data of Black Sugar Rose - 628242801133.png inserted successfully.
+Data of Sour OG Cookies - 671148901049.png inserted successfully.
+Data of Blueberry Boogie - 820939005668.png inserted successfully.
+Data of Gas Face - 827763003358.png inserted successfully.
+Data of Original Kush - 820939005385.png inserted successfully.
+Data of BC Bubba Pink Biologique - 688318000860.png inserted successfully.
+Data of Guava Jam - 628124835454.png inserted successfully.
+Data of Cherry Cheesecake.PNG inserted successfully.
+Data of Gelato 33 x Tropicana Cookies - 182373000525.png inserted successfully.
+Data of Bubble Up - 628124835430.png inserted successfully.
+Data of Bastille - 628518000413.png inserted successfully.
+Data of Kiwi Lime Punch - 841432010713.png inserted successfully.
+Data of MK Ultra - 629108268145.png inserted successfully.
+Data of Member Berry.PNG inserted successfully.
+Data of Mosa Evo Biologique - 628693095136.png inserted successfully.
+Data of Garlic Chem.PNG inserted successfully.
+Data of Top Cola AAAA - 628693095433.png inserted successfully.
+Data of Comatose - 688318002338.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Ginger GMO",
+  "marque": "Tam Tams",
+  "Type de produit": "Fleurs séchées",
+  "Caractéristiques": ["Tampons du Tam",
+                       "Disque circulaire à la fleur",
+                       "Disque de couleur orange"],
+  "Format": "3.5G",
+  "Variété": "Ginger GMO",
+  "Génétique": "Bourgeons avec de fines touches de cristaux oranges",
+  "Culture": "Intérieure",
+  "Taux de THC": "Haut",
+  "Taux de CBD": "Fait a la main",
+  "Humidité": "Oui – équilibrée et uniforme à la main",
+  "Méthode d'affinage": "Affinage mécanique",
+  "Utilisation cible": "Effets relaxants, sommeil et euphorie",
+  "Avertissements": ["Secondes à 5 minutes après inhalation",
+                     "Risques associés à certains substances: tabac, alcool et médicaments"]
+}
+Data of Pink Gelato.png inserted successfully.
+Data of Oz Kush - 628011959188.png inserted successfully.
+Data of Lemonberry - 628011959379.png inserted successfully.
+Data of Purple Mint Cake - 688083014550.png inserted successfully.
+Data of Banana Daddy - 620376135375.png inserted successfully.
+Data of Purple Punch - 827885010111.png inserted successfully.
+Data of Cocottes Fruitées - 824165001975.png inserted successfully.
+Data of Triangle Mints.PNG inserted successfully.
+Data of Farm Gas - 628582001927.png inserted successfully.
+Data of Purple Chitral.PNG inserted successfully.
+Data of La Womac.PNG inserted successfully.
+Data of Ponderosa Pine.PNG inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Blueberry Indica",
+  "marque": "Spinach",
+  "prix": "35.99",
+  "origine": "Cultivé à Stayner, Ontario",
+  "inclusion": ["Un disque à rouler 'Spinach'"],
+  "quantité THC": "23%",
+  "effets potentiels": ["Les effets se font sentir entre 5 minutes et 5 heures après l'inhalation"],
+  "avertissement": "Produit destiné à l'usage légal seulement. Consulter un médecin avant la consommation. Risques pour la santé associés."
+}
+Data of Zeddyz.PNG inserted successfully.
+Data of Motor Breath - 827885015321.png inserted successfully.
+Data of Drip Station.png inserted successfully.
+Data of Spinach Master Kush.PNG inserted successfully.
+Data of Rockstar Léger.PNG inserted successfully.
+Data of Blue Cheese.png inserted successfully.
+La collection 'Fleurs Séchées  Sativa 3.5g' existe déjà.
+Le nombre d'entree de la collection 'Fleurs Séchées  Sativa 3.5g' ne correspond pas au nombre de png.
+Data of Space Grass 4 - 820939003633.png inserted successfully.
+Data of Ventura Dawg - 843087002457.png inserted successfully.
+Data of Cherry Mints Bio - 827763002887_1.png inserted successfully.
+Data of Lime Haze - 824164002959.png inserted successfully.
+Data of Pedro's Sweet Sativa - 628242801072.png inserted successfully.
+Data of Inzane in the Membrane - 843087001801.png inserted successfully.
+Data of Super Tropiques GMO - 671148011083_1.png inserted successfully.
+Data of Painted Lady - 814559000714.png inserted successfully.
+Data of Dark Shadow Haze - 843087002488.png inserted successfully.
+Data of Lemon Thai.png inserted successfully.
+Data of Sage N' Sour - 628011336682_1.png inserted successfully.
+Data of French Cookies - 870814000028.png inserted successfully.
+Data of Star Struck - 182373000648_1.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Black Jelly",
+  "marque": "San Rafael",
+  "type": "Hybride à dominance Sativa",
+  "THC": "30,3 %",
+  "CBD": "<1 %",
+  "effets": ["Sensation d'euphorie", "Concentration", "Inspiration créative", "Énergie"],
+  "utilisation_recommandée": "Convient à la journée",
+  "focus_principaux": ["Énergie", "Focus", "Émotions", "Créativité"],
+  "temps_apparition": "5 minutes",
+  "durée_effets": "90 à 180 minutes",
+  "format": "3,5 g"
+}
+Data of Miss Kim - 875429000999.png inserted successfully.
+Data of Colorado Cherry - 628634303276_1.png inserted successfully.
+Data of Berry Cream Puff - 820939002483_1.png inserted successfully.
+Data of Royal Moby.png inserted successfully.
+Data of Super Lemon Skunk - 688318003038_1.png inserted successfully.
+Data of Lemon Royale.png inserted successfully.
+Data of Septiem Sour OG Cheese - 627987928143.png inserted successfully.
+Data of Super Tropiques GMO - 671148011083.png inserted successfully.
+Data of Medellin Sativa - 827763003006.png inserted successfully.
+Data of Tropical Sour Cookies - 827885013730.png inserted successfully.
+Data of Green Cush - 824164002409.png inserted successfully.
+Data of Jack Herer - 824164002393.png inserted successfully.
+Data of Buttered Toast - 628582002184.png inserted successfully.
+Data of Le Passe Partout - 666592000677_1.png inserted successfully.
+Data of Pineapple OG - 820939005408.png inserted successfully.
+Data of Haze Thingz.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Colorado Cherry",
+  "marque": "bleuh",
+  "type": "Fleurs séchées",
+  "sous-type": "Sativa",
+  "format": "3.5g",
+  "méthode de cultivation": "En sol vivant",
+  "lieu de culture": "Québec",
+  "variété": "Colorado Cherry",
+  "temps d'apparition des effets": "90 secondes",
+  "durée des effets": "5 minutes après inhalation"
+}
+Data of Ultra Sour - 671148011045.png inserted successfully.
+Data of Strawberry N' Mintz - 628518000246_1.png inserted successfully.
+Data of BC Power Plant - 824164002386.png inserted successfully.
+Data of Diesel Haze.png inserted successfully.
+Data of Le Passe Partout - 666592000677.png inserted successfully.
+Data of Atomic Kush - 814559000370.png inserted successfully.
+Data of East Coast Ultra - 688083011962_1.png inserted successfully.
+Data of Dark Shadow Haze - 843087002488_1.png inserted successfully.
+Data of Strawberry N' Mintz - 628518000246.png inserted successfully.
+Data of Limelight - 671148401259.png inserted successfully.
+Data of Jean-Guy - 628176622415_1.png inserted successfully.
+Data of Sage N' Sour - 628011336682.png inserted successfully.
+Data of Grandpa's Stash - 694144015718.png inserted successfully.
+Data of Strawberry Bubbles - 620376135146.png inserted successfully.
+Data of Miracle Cookies.PNG inserted successfully.
+Data of Sour Cookies - 688318001270.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Amnesia Haze",
+  "marque": "Broken Coast",
+  "format": "3,5g",
+  "nom_du_produit": "Amnesia Haze",
+  "espèce": "Sativa",
+  "variété": "South East Asian x Afghani x Hawaiian",
+  "couleur_du_produit": "verte",
+  "la_dureté": "Duran",
+  "méthode_de_culture": "Inconnue",
+  "utilisation_habituelle": "États de stabilité élevée",
+  "profil_de_plante": "Herbe",
+  "catégorie": "Fleurs Séchées",
+  "durée": "90 secondes à quatre-vingts inhalation",
+  "effets_potentiels": "Peut donner une sensation sédatif ou énergétique"
+}
+Data of Mango K.PNG inserted successfully.
+Data of Triple Sour Haze - 628176622750.png inserted successfully.
+Data of Blue Dream - 841432010621.png inserted successfully.
+Data of L'affaire est Ketchup - 666592000691_1.png inserted successfully.
+Data of East Coast Ultra - 688083011962.png inserted successfully.
+Data of Alien Guy - 694144015336.png inserted successfully.
+Data of Crumbled Lime.PNG inserted successfully.
+Data of Alaskan Thunderfuck.PNG inserted successfully.
+Data of Dancehall - 841432010607_1.png inserted successfully.
+Data of Inzane in the Membrane - 843087001801_1.png inserted successfully.
+Data of Jean-Guy - 628176622415.png inserted successfully.
+Data of Apples & Cream.png inserted successfully.
+Data of Trainwreck - 676338003299.png inserted successfully.
+Data of Tangerine Dream - 628582001736.png inserted successfully.
+Data of Time Wreck.png inserted successfully.
+Data of Sonic Lemon Fuel - 841432010720.png inserted successfully.
+Data of Chem de la Chem - 820939002681_1.png inserted successfully.
+Data of L'affaire est Ketchup - 666592000691.png inserted successfully.
+Data of Orange Skunk.PNG inserted successfully.
+Data of Citrus Orchad.png inserted successfully.
+Data of Grandpa's Stash - 694144015718_1.png inserted successfully.
+Data of Citrus Tsunami.PNG inserted successfully.
+Data of Haze Mandarine - 694144015985.png inserted successfully.
+Data of Jigglers.PNG inserted successfully.
+Data of Old School Diesel.png inserted successfully.
+Data of Cherry Mints Bio - 827763002887.png inserted successfully.
+Data of Medellin Sativa - 827763003006_1.png inserted successfully.
+Data of Rêve Lucide - 627987928211.png inserted successfully.
+Data of Haze Mandarine - 694144015985_1.png inserted successfully.
+Data of Superfleur Équilibrée 1 1 -838728000350.png inserted successfully.
+Data of BC Fruit Loopz Biologique - 688318004431.png inserted successfully.
+Data of Super Lemon Skunk - 688318003038.png inserted successfully.
+Data of Star d'un Soir - 814559000738.png inserted successfully.
+Data of Super Top Gun.PNG inserted successfully.
+Data of Berry Cream Puff - 820939002483.png inserted successfully.
+Data of Chem de la Chem - 820939002681.png inserted successfully.
+No Data extracted for Grammes Dorés - 694144010621_1.png
+An error occurred while inserting data of Grammes Dorés - 694144010621_1.png: E11000 duplicate key error collection: sqdc_quaie.Fleurs Séchées  Sativa 3.5g index: _id_ dup key: { _id: ObjectId('6695873277eb553a24c8924a') }, full error: {'index': 0, 'code': 11000, 'errmsg': "E11000 duplicate key error collection: sqdc_quaie.Fleurs Séchées  Sativa 3.5g index: _id_ dup key: { _id: ObjectId('6695873277eb553a24c8924a') }", 'keyPattern': {'_id': 1}, 'keyValue': {'_id': ObjectId('6695873277eb553a24c8924a')}}
+Data of Super Lemon Haze Biologique - 628693095044.png inserted successfully.
+Data of Peach Chauffeur.png inserted successfully.
+Data of Star Struck - 182373000648.png inserted successfully.
+Data of Dancehall - 841432010607.png inserted successfully.
+Data of Velvet Punch Haze Flower - 628693377249.png inserted successfully.
+Data of Grammes Dorés - 694144010621.png inserted successfully.
+Data of Frozen Lemons - 182373000464.png inserted successfully.
+Data of B├вtons de fleurs CBD - 628634303177.png inserted successfully.
+Data of Tonalité Sativa - 694144015169.png inserted successfully.
+Data of Trois fromages.PNG inserted successfully.
+Data of Balancé.PNG inserted successfully.
+Data of OS.JOINTS Indica 5s - 697238777059.png inserted successfully.
+Data of Billy's Phéno - 878865000387.png inserted successfully.
+Data of Les Petits CBD.PNG inserted successfully.
+Data of Méchant Pétard - 875429000425.png inserted successfully.
+Data of Menu Secret - 688318002284.png inserted successfully.
+Data of Lunaire.PNG inserted successfully.
+Data of Joint de Lune - 628176622774.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Safari",
+  "marque": "OGGN",
+  "type": "Sativa",
+  "unités de dosage": "3 unités de 0.5g",
+  "effets potentiels": ["Euphorie", "Energie"],
+  "durée des effets": "5 minutes après inhalation"
+}
+Data of Le Coffret 5 Points - 628634099681.png inserted successfully.
+Data of Roulés Variés - 628582001880.png inserted successfully.
+Data of Roxton Air.PNG inserted successfully.
+Data of Choix du Connaisseur - 688318002994.png inserted successfully.
+Data of Blanh Sativa - 628634303344.png inserted successfully.
+Data of Artisans.png inserted successfully.
+Data of Le Tourbillon.PNG inserted successfully.
+Data of Série Limitée de Cultivars - 628176417394.png inserted successfully.
+Data of Yin-yang.PNG inserted successfully.
+Data of Kush-Tot.PNG inserted successfully.
+Data of Moitié THC Moitié CBD - 628634303351.png inserted successfully.
+Data of Sélections - 688318002017.png inserted successfully.
+Data of Sélections de petits Lots.PNG inserted successfully.
+Data of Mélange Sativa OMY.png inserted successfully.
+Data of Suzettes.png inserted successfully.
+Data of Guédilles - 875429000487.png inserted successfully.
+Data of H26 Sativa - 628634303245.png inserted successfully.
+Data of Meli-Moulu.PNG inserted successfully.
+Data of H30 Kush - 628634303009.png inserted successfully.
+Data of LSO 1 1.PNG inserted successfully.
+Data of H26 Indica - 628634303252.png inserted successfully.
+Data of Explosion de Fruits - 826966013287.png inserted successfully.
+Data of Rocketman - 875429000418.png inserted successfully.
+Data of Préroulés CBD - 820939001493.png inserted successfully.
+Data of Équilibre Pur.PNG inserted successfully.
+Data of Bête de Diesel - 671148301177.png inserted successfully.
+Data of Petit-Pétard - 628176223131.png inserted successfully.
+Data of Équilibre.PNG inserted successfully.
+Data of OS.JOINTS Sativa 5s - 697238777042.png inserted successfully.
+Data of Trio Beau-Pétard - 628176223247.png inserted successfully.
+Data of CBD 2000.PNG inserted successfully.
+Data of Big Bang - 830717000662.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Atomiseur Slingshot THC",
+  "marque": "BOON DOCKS",
+  "format": "12ml",
+  "type_extraction": "CO2",
+  "dose_par_vapeur": "0.5ml danser parle",
+  "temps_apparition_effet": "Après 30 minutes",
+  "effets_potentiels": ["Euphorie", "Vitalité", "Énergie"],
+  "motif": "Ne composez pas ou n'opérez pas de machinerie lourde après l'utilisation"
+}
+Data of Atomiseur THC - 627560050001.png inserted successfully.
+Data of Twd.sativa 900.png inserted successfully.
+Data of Indica 500 500.PNG inserted successfully.
+Data of Sugar Cookies - 820939002292.png inserted successfully.
+Data of Sky Cuddler Kush Bio - 628011336408.png inserted successfully.
+Data of Farm Gas - 628582002191.png inserted successfully.
+Data of God Kush Cross.PNG inserted successfully.
+Data of Vanilla Gelato - 671148012028.png inserted successfully.
+Data of Atomic Sour Grapefruit - 841432012762.png inserted successfully.
+Data of Galactic Rntz - 628124825257.png inserted successfully.
+Data of Drip Station.PNG inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Kushatose",
+  "marque": "THC 64",
+  "cultive": "Delta en Colombie-Britanique",
+  "sensation": "Calme",
+  "densite": "Dense et compacte",
+  "couleur": "La fleur est verte foncée et givrée",
+  "saveur": "Sueur de crème brûlée pendant l'expiration",
+  "temperature_de_conservation": "Suivi de pré-roulé froid"
+}
+Data of GG#4 - 688318003670.png inserted successfully.
+Data of Death Bubba Biologique - 628693095426.png inserted successfully.
+Data of Chem Cookies #44 - 628011959225.png inserted successfully.
+Data of Kush Cookies - 800129902298.png inserted successfully.
+Data of GMO BX - 820939002278.png inserted successfully.
+Data of Holy Grail Kush - 628242321396.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "NIGHTMARES FUEL OG",
+  "marque": "Daily Special",
+  "produit": "Fleurs séchées préroulées",
+  "quantité": "5 grammes par unité",
+  "strip": [
+    "OG Mutiple",
+    "0,5 grammes",
+    "Faite de fleurs tendres finement moulues avec particules de résine",
+    "À base acétique et fibres de bois",
+    "Verre canelé"
+  ],
+  "effets_potentiels": [
+    "calmes",
+    "relaxation au sommeil"
+  ],
+  "temps_d_apres": "5 minutes d'apparition de ses effets",
+  "inhalation": "Papier non blanchi"
+}
+Data of Joints Enveloppés de Chanvre - 836780002527.png inserted successfully.
+Data of Sweet Berry Kush - 694144014216.png inserted successfully.
+Data of Monkey Butter - 694144014193.png inserted successfully.
+Data of Banana Daddy - 620376111386.png inserted successfully.
+Data of Bastille - 628518000420.png inserted successfully.
+Data of Banana Daddy - 620376155076.png inserted successfully.
+Data of Rockstar Tuna Bio - 827763002641.png inserted successfully.
+Data of I.C.C. - 671148409569.png inserted successfully.
+Data of Pink God.PNG inserted successfully.
+Data of Drette Indica - 628634303580.png inserted successfully.
+Data of Green Monster B. - 841432012892.png inserted successfully.
+Data of Crushed Berries - 870814000194.png inserted successfully.
+Data of Ono Planet of the Grapes - 835339000168.png inserted successfully.
+Data of GG#4 - 688318004653.png inserted successfully.
+Data of Tiger Cake - 688083012037.png inserted successfully.
+Data of Blueberry Muffins - 870857001365.png inserted successfully.
+Data of Maple Kush Bio - 827763002894.png inserted successfully.
+Data of Cement Shoes - 990200000026.png inserted successfully.
+Data of BC Bubba Pink Biologique - 688318000877.png inserted successfully.
+Data of Kiwi Sorbet - 841432012847.png inserted successfully.
+Data of CBD OG Kush - 688083012518.png inserted successfully.
+Data of Nugz Wrap Indica - 628124810598.png inserted successfully.
+Data of Triangle Mints.PNG inserted successfully.
+Data of Triple Blue - 827885016007.png inserted successfully.
+Data of BC White Rainbow Biologique.PNG inserted successfully.
+Data of Roulé de Papier de Chanvre - 688083017582.png inserted successfully.
+Data of Master Kush - 688318004677.png inserted successfully.
+Data of Planet of the Grapes - 628634099612.png inserted successfully.
+Data of Black Sugar Rose - 628242801706.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Bûlette - Indica - 2.5g",
+  "marque": "Tribal",
+  "génétique": "Indica",
+  "qualité": "AAAA - Séchée suspendu, lentememnt et taillée à la main",
+  "formats disponibles": "5.0g (2g une fois roulé)",
+  "description du produit": "Joint de cannabis prêt à fumer",
+  "variations de couleur de la bruyère": "Feuilles de bruyère sel et poivre",
+  "type de papier conique": "Blanc",
+  "suivi chimique": "Non Biolavé produit biologique",
+  "cachet d'humidité": "Oui"
+}
+Data of BC Purple Kush.PNG inserted successfully.
+Data of GMO Cookies - 841432012731.png inserted successfully.
+Data of Blueberry Muffin.PNG inserted successfully.
+Data of Sourdough - 628582002160.png inserted successfully.
+Data of Blueberry Seagal - 628242801881.png inserted successfully.
+Data of Rosine 30.PNG inserted successfully.
+Data of G-mint.PNG inserted successfully.
+Data of Dabs de Luxe.PNG inserted successfully.
+Data of Budder.PNG inserted successfully.
+Data of Serpent de Haschich.PNG inserted successfully.
+Data of Gorilla 69 infusé.PNG inserted successfully.
+Data of Galactic Burger Joints Infusés.PNG inserted successfully.
+Data of 2020 Vision - 843087003270.png inserted successfully.
+Data of Joint infusés Kenta Kush.PNG inserted successfully.
+Data of Joints Infusés D'Afghan Gold - 628011336620.png inserted successfully.
+Data of Animal Face Préroulé Infusé - 878865000318.png inserted successfully.
+Data of Le Snake Habibi Kush.PNG inserted successfully.
+Data of Joints Infusés Pineapple - 694144015947.png inserted successfully.
+Data of Capitaine Kush - 671148305380.png inserted successfully.
+Data of Lemon Linx joint infusés.PNG inserted successfully.
+Data of Legendary Larry - 628098850552.png inserted successfully.
+Data of 1515 Vision - 843087005533.png inserted successfully.
+Data of Joints de Haschich Cherry Lime - 671148409828.png inserted successfully.
+Data of Triple Baies Infusé - 834407002097.png inserted successfully.
+Data of Préroulés Infusés CBD+ - 870814008024.png inserted successfully.
+Data of Bouquet Infusé Pêche - 820939003015.png inserted successfully.
+Data of Bouquet Infusé Framboise - 820939005484.png inserted successfully.
+Data of La Snake Skunk Master Flex.PNG inserted successfully.
+Data of Fleur + Distillat + Isolat - 824164002836.png inserted successfully.
+Data of Roudoux - 830717002680.png inserted successfully.
+Data of Fleur + Haschich Libanais - 688318002321.png inserted successfully.
+Data of Pré roulé à la Résine - 688318004691.png inserted successfully.
+Data of Préroulés Infusés Melon Haze - 842572002538.png inserted successfully.
+Data of Le Serpent legendary Larry.PNG inserted successfully.
+Data of G Sherb Joints infusés.PNG inserted successfully.
+Data of Joint Infusé à la Rosine - 688318002208.png inserted successfully.
+Data of Pink Kush Infusé.PNG inserted successfully.
+Data of Préroulés Infusés THC-CBD+ - 87081400008017.png inserted successfully.
+Data of Ice Cream Infusé de Diamant - 628098850569.png inserted successfully.
+Data of CBD 50.PNG inserted successfully.
+Data of Gélules Équilibrées - 629108227142.png inserted successfully.
+Data of Capsule à la Rosine - 688318004387.png inserted successfully.
+Data of CBD 750 - 850119000558.png inserted successfully.
+Data of Hash Rosin Gouttes - 843087005632.png inserted successfully.
+Data of Titan - 830717000341.png inserted successfully.
+Data of Gems 10.0 - 628242248846.png inserted successfully.
+Data of Gélules de THC Sativa.PNG inserted successfully.
+Data of CBD Gems.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "TWEED - CBD",
+  "marque": "Tweed",
+  "effets_potentiels": ["Relaxant", "Sommeil"],
+  "temps_d'action_estime": ["10 minutes"],
+  "modes_d'administration": ["Capsules"],
+  "recommandations_de_dosage": ["Démarrer avec une capsule", "attendre 10 heures avant d'en consommer plus"],
+  "quantite": ["30 capsules"],
+  "informations_supplementaires": [
+      "Composé des produits de cannabis",
+      "Pour plus d'information, vérifier la législation locale"
+  ]
+}
+this response wasn't inserted into mongo :
+{
+  "nom": "Penelope",
+  "marque": "Canopy Growth",
+  "type": "Skunk Haze",
+  "THC": "18 mg",
+  "CBD": "0.0 mg",
+  "quantité": "10 g",
+  "effets potentiels": ["Euphorie", "Détendre l’esprit", "Appétit"],
+  "temps d'extraction des effets": "Jusqu'à 60 minutes après ingestion",
+  "méthode d'extraction": ["CO2"],
+  "recommandation de dosage": "Il est fortement conseillé de commencer par une seule dose, également mesurer l'effet avant de consumer plus, soit 10 mg."
+}
+Data of CBD Cap30 - 628634303290.png inserted successfully.
+Data of Rêver - 694144016005.png inserted successfully.
+Data of Capsules Riches en THC.PNG inserted successfully.
+Data of Pink Kush - 628582000975.png inserted successfully.
+Data of Tisane Lavande Camomille - 694144015251.png inserted successfully.
+Data of Thé au Curcuma CBD.png inserted successfully.
+Data of Thé Vert Décaf Pêche Gingembre - 694144015220.png inserted successfully.
+Data of Matcha THC+CBD.png inserted successfully.
+Data of Matcha CBD.png inserted successfully.
+Data of Thé Rooibos Vanille - 826966012075.png inserted successfully.
+Data of Café Olé CBD.png inserted successfully.
+Data of Mélange de Thé au Curcuma - 628011336002.png inserted successfully.
+Data of Thé Noir Citron - 628242802024.png inserted successfully.
+Data of Café Olé THC-CBD.png inserted successfully.
+Data of Thé au Curcuma THC+CBD.png inserted successfully.
+Data of Thé à la Menthe - 694144015282.png inserted successfully.
+Data of Mélange à Sauce Poutine Infusé - 688318004783.png inserted successfully.
+Data of Figues infusés.png inserted successfully.
+Data of Thé Infusé Baies Hibiscus - 824165001432.png inserted successfully.
+Data of Pomme et Matcha - 830717002451.png inserted successfully.
+Data of Camerise - 159969202413.png inserted successfully.
+Data of Craquelins Épicés - 842572001692.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Morceaux de choux-fleurs infusés",
+  "marque": "Rilaxe",
+  "type": "Choux-fleurs infusés",
+  "features": ["Sans féculents", "Sans produits laitiers", "Sans gluten", "Sans noix", "Sans soja", "Sans OGM", "Améliore l'énergie", "Combat le stress", "Aide à la digestion"],
+  "partenaire_de_production": "Apothicairerie",
+  "texture": "Dure, friable",
+  "effets_potentiels": "Euphorie, détente, surmonter des conditions",
+  "temps_d'apparition_des_effets": "Durée jusqu'à 60 minutes après ingestion du produit",
+  "unités_contenues_dans_le_paquet": "4 unités"
+}
+Data of Jerky de Boeuf - 628011336903.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Betteraves infusées",
+  "marque": "Rilaxe",
+  "forme": "Morceaux de betteraves",
+  "partenaire_de_production": "Apothicaire Botanique",
+  "texture": "Chantante, Fondante",
+  "effets_potentiels": ["Calme", "Euphorie"],
+  "temps_d'apparition_des_effets": "Jusqu'à 60 minutes après ingestion du produit",
+  "ingrédients": ["Betteraves", "Huiles infusées"]
+}
+Data of Mangue Pétillante - 824165002736.png inserted successfully.
+Data of Ramen au Poulet infusé.PNG inserted successfully.
+Data of Miel Piquant - 628719126622.png inserted successfully.
+Data of Abricot et Reishi - 830717002888.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Lemon Brock Ice Hemp",
+  "marque": "Teapot",
+  "caractéristiques_du_produit": ["Thé glacé au CBD", "Saveur Citron", "100% Naturel", "Fermenté à froid"],
+  "type_de_boisson": "Thé noir au CBD aromatisé naturellement",
+  "format": "Pêche",
+  "source": "De qualité",
+  "intérêt_particulier": "Produit naturellement fermenté à froid",
+  "méthode_d'extraction": "Extraction au CO2 de néo-ensausage",
+  "effets_potentiels": ["Relaxation", "Détox"],
+  "délai_d'apparition_des_effets": "Ne soyez pas surpris si vous ne ressentez rien ou si vous dormez.",
+  "consommation_recommandée": "Consommé 60 minutes après ingestion"
+}
+Data of Bleuet et Lavande CBD - 830717002536.png inserted successfully.
+Data of Saucissons infusées de THC.PNG inserted successfully.
+Data of Bleuet et Lavande - 830717002475.png inserted successfully.
+Data of Sauce Piquante Habanero - 628719126639.png inserted successfully.
+Data of Arachides enrobées croquantes.PNG inserted successfully.
+Data of Bouchées Cannelle Cassis.png inserted successfully.
+Data of Thé Limonade - 813862001494.png inserted successfully.
+Data of Breuvage Pommes-Cannelle - 628098851115.png inserted successfully.
+Data of Cocottes Épicées.PNG inserted successfully.
+Data of Orbitale Indica - 694144014612.png inserted successfully.
+Data of Collectif Artisanal.PNG inserted successfully.
+Data of Choix du Connaisseur - 688318002987.png inserted successfully.
+Data of Hybride 101.png inserted successfully.
+Data of Blanh Sativa - 628634303221.png inserted successfully.
+Data of Vision Hybride - 628176622972.png inserted successfully.
+Error decoding JSON for marque: Expecting value: line 1 column 2 (char 1)
+Data of Centre de recherche.png inserted successfully.
+Data of Dans le Divan.png inserted successfully.
+Data of OUI-D - 666592000134.png inserted successfully.
+Data of Collectif Artisanal Indica.PNG inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Fleurons",
+  "marque": "C3",
+  "description": ["Menu Dessert", "Fleurs en rotation", "Inclut un sachet d’humidité Bovéda 62%"],
+  "informations": ["Les effets surviennent de 90 secondes à 5 minutes après l'inhalation.", "Évitez les mélanges avec des substances: tabac, alcool et médicaments."],
+  "taux_de_THC": "THC 62%",
+  "warnings": ["Tous droits réservés C3 Farm"]
+}
+Data of Quad.png inserted successfully.
+Data of Intersection Équilibrée - 820939003374.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "M.E. ZON",
+  "marque": "Great White North",
+  "type": "Genotype: En rotation",
+  "dominance": "Indica",
+  "pourcentageTHC": "1.5%-4.9%",
+  "culture": "Culture intérieure, hydrponique, cultivé au Québec",
+  "sechage": "Minimum 28 jours après séchage",
+  "tempsApparition": "90 secondes"
+}
+Data of Lab 101 - 628176622804.png inserted successfully.
+Data of Tonalité Sativa - 694144014599.png inserted successfully.
+Data of LSO Hybride - 628693106276.png inserted successfully.
+Data of Eclipse Lunaire - 628176622781.png inserted successfully.
+Data of Choix du Connaisseur - 688318002994.png inserted successfully.
+Data of Miss Kim - 875429000999.png inserted successfully.
+Data of Menu Cantine.png inserted successfully.
+Data of Collection Biologique.PNG inserted successfully.
+Data of Juste CBD.png inserted successfully.
+Data of Me.zon.PNG inserted successfully.
+Data of Champs Verdoyants - 875429000531.png inserted successfully.
+Data of Appalaches - 820939001608.png inserted successfully.
+Data of Micro Qc - 875429000524.png inserted successfully.
+Data of LSO 1;1 - 628693106252.png inserted successfully.
+Data of Soupe du Jour - 628176622965.png inserted successfully.
+Data of Récolte de Choix.png inserted successfully.
+Data of La Balade - 820939003619.png inserted successfully.
+Data of Sélections de Petits Lots - 628242321365.png inserted successfully.
+Data of Grasses Matinée.PNG inserted successfully.
+Data of En Saison - 628176622880.png inserted successfully.
+Data of Vertu - 875429000609.png inserted successfully.
+Data of Phéno X - 628693095143.png inserted successfully.
+Data of LSO Sativa - 628693106269.png inserted successfully.
+Data of Station Service - 628176622729.png inserted successfully.
+Data of Collectif Artisanal - 820939003480.png inserted successfully.
+Data of Les P'tits Cousins Sativa - 628942034428.png inserted successfully.
+Data of Grasse Matinée - 628634099407pdf.png inserted successfully.
+Data of Etchemins - 820939002117.png inserted successfully.
+Data of Preissac - 820939001967.png inserted successfully.
+Data of La Recrue - 628011959157.png inserted successfully.
+Data of Numéro Ono - 835339000038.png inserted successfully.
+Data of Mix Sativa - 870814000509.png inserted successfully.
+Data of Bold Petit Lot QC - 628176417431.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Kush",
+  "marque": "blakh",
+  "cultivé": "Québec",
+  "catégorie": "Produits pétroliers",
+  "THC": "H30",
+  "CBD": "1 g (au-dessous de 0.5)",
+  "format": "Moderne",
+  "genre": "Indica",
+  "description": ["Variétés enracinées de la ligne Kush", "Moretes odorantes", "Effet détendant", "Concentration, Détente, Inspiration"],
+  "type de papier": "Supérieur",
+  "lieu de culture": "Québec"
+}
+Data of Fleur de Lune - 628176622767.png inserted successfully.
+Data of Menu Cantine - 875429000395.png inserted successfully.
+Data of Rare.png inserted successfully.
+Data of Etceterra - 628942229329.png inserted successfully.
+Data of Chasse-Galerie - 875429000869.png inserted successfully.
+Data of Lyoclean.png inserted successfully.
+Data of H26 Indica - 628634303184.png inserted successfully.
+Data of Kik Cola.png inserted successfully.
+Data of Kush Tot.PNG inserted successfully.
+Data of Saisons - 817048000196.png inserted successfully.
+Data of Blanh Hybride - 628634303214.png inserted successfully.
+Data of Équilibre.PNG inserted successfully.
+Data of Grasse Matinée - 628634099407pdf1.png inserted successfully.
+Data of OS.Fleur Hybride - 697238777028.png inserted successfully.
+Data of H30 Haze - 628634303146.png inserted successfully.
+Data of H30 Kush - 628634303115.png inserted successfully.
+Data of Rotation Basse.png inserted successfully.
+Data of Grammes Dorés - 694144010621.png inserted successfully.
+Data of Gelato - 870814000202.png inserted successfully.
+Data of Dia De Los Muertos - 628693377232.png inserted successfully.
+Data of BC Lime M'jito - 688318001195.png inserted successfully.
+Data of Interlude.png inserted successfully.
+Data of Orange Gelato.png inserted successfully.
+Data of Sour Lemonade - 628011959492.png inserted successfully.
+Data of Blue Chemo - 666592000523.png inserted successfully.
+Data of Feeldoux - 666592000837.png inserted successfully.
+Data of Phantom Cookies - 820939003138.png inserted successfully.
+Data of Chatterbox - 628176622545.png inserted successfully.
+Data of Strawberry Pavé Sol Vivant - 628693106603.png inserted successfully.
+Data of Tropic Banana - 628176622712.png inserted successfully.
+Data of Frosted Cream Puffs - 841432010553.png inserted successfully.
+Data of Sherbacio - 666592000622.png inserted successfully.
+Data of Lemon Skunk - 688083016059.png inserted successfully.
+Data of Platinum Garlic - 628242321259.png inserted successfully.
+Data of Momentum - 814559000387.png inserted successfully.
+Data of Lemon Snow Cone - 628176622910.png inserted successfully.
+Data of BC White Rntz Biologique - 688318001454.png inserted successfully.
+Data of QC Limité L'Entre Deux - 688083013775.png inserted successfully.
+Data of Le Verger.png inserted successfully.
+Data of Royal Mauiberry - 800129904254.png inserted successfully.
+Data of Apex OG - 628942057410.png inserted successfully.
+Data of Monkey Glue - 694144015657.png inserted successfully.
+Data of White Runtz - 628693095471.png inserted successfully.
+Data of White Rntz.PNG inserted successfully.
+Data of Redecan 1 1 - 628242248525.png inserted successfully.
+Data of Sun County Kush - 628639001474.png inserted successfully.
+Data of SuperBoof - 628693095389.png inserted successfully.
+Data of Peanut Butter Breath - 628069580105.png inserted successfully.
+Data of BC Harlequin Biologique.PNG inserted successfully.
+Data of Bruce Banner - 870814000042.png inserted successfully.
+Data of Moby Dick - 620376135061.png inserted successfully.
+Data of Gelato #41 - 688318003052.png inserted successfully.
+Data of Cannatonic - 820939002599.png inserted successfully.
+Data of Critical Kush - 628098850712.png inserted successfully.
+Data of Skunk Haze Bio - 827763003051.png inserted successfully.
+Data of Oreoz Supreme.PNG inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Hybride Cookies",
+  "marque": "DOJA",
+  "sensation": "Sensation accrues de joie et de bien-être",
+  "effets": ["Relaxation", "Sociabilité", "Joie"],
+  "taille_des_fleurs": "Fleurs de taille moyenne",
+  "cultive_et_produit_dans": "Canada",
+  "cannabinoides_dominants": "THC élevé",
+  "type_de_culture": "Culture en intérieur, Hydroponique",
+  "temps_d_effectuation": "90 secondes après l'inhalation",
+  "indice_Boveda": "62",
+  "taux_de_THC": "26 %",
+  "methodes_de_consommation": ["Vaporisation", "Fumée"],
+  "ligne_genetique": "Triangle Kush x Animal Mints",
+  "emballage": "Emballage recyclable et scellé pour garder la fraîcheur"
+}
+Data of Super Skunk - 820939005392.png inserted successfully.
+Data of Cotton Candy - 841432040031.png inserted successfully.
+Data of Super Lemon Skunk.PNG inserted successfully.
+Data of Sunshine Bubble Kush - 628242701754.png inserted successfully.
+Data of ACDC - 814559000394.png inserted successfully.
+Data of BC White Grape OG Biologique - 628242201018.png inserted successfully.
+Data of Aweille Réveille - 628634099131.png inserted successfully.
+Data of Triple Burger - 628124835294.png inserted successfully.
+Data of Coastal Sage - 820939002032.png inserted successfully.
+Data of Diesel - 841432010614.png inserted successfully.
+Data of Triangle Thin Mints.PNG inserted successfully.
+Data of SinMint Kush - 628069580273.png inserted successfully.
+Data of Fa├зade - 628123510048.png inserted successfully.
+Data of Wedding Cake - 870814000219.png inserted successfully.
+Data of Lève-t├┤t - 694144016029.png inserted successfully.
+Data of Melonade - 628176622446.png inserted successfully.
+Data of Oregon Coast CBD - 628634099926.png inserted successfully.
+Data of Caprice - 628942229268.png inserted successfully.
+Data of Sour Jack Biologique - 628242200912.png inserted successfully.
+Data of Cocoa Bomba - 841432010577.png inserted successfully.
+Data of First Class Funk - 817048000257.png inserted successfully.
+Data of Billy's Pheno - 878865000370.png inserted successfully.
+Data of Chocolate Cheesecake - 694144012274.png inserted successfully.
+Data of OG Kush Breath - 824165002576.png inserted successfully.
+Data of Sweet Diesel.png inserted successfully.
+Data of Legion.png inserted successfully.
+Data of Numéro ONO Grape Diamonds.PNG inserted successfully.
+Data of PS Cheetah - 820939005835.png inserted successfully.
+Data of Wedding Cake - 841432010669.png inserted successfully.
+Data of Gorilla 69.png inserted successfully.
+Data of Funky Zktlz - 688083012112.png inserted successfully.
+Data of Electric Honeydew - 628582002153.png inserted successfully.
+Data of Muertos.PNG inserted successfully.
+Data of Bubble Mints - 820939002469.png inserted successfully.
+No Data extracted for La Bo├оte Noire Essence Gazeuse - 838728000343.png
+An error occurred while inserting data of La Bo├оte Noire Essence Gazeuse - 838728000343.png: E11000 duplicate key error collection: sqdc_quaie.Fleurs Séchées Hybride 3.5g index: _id_ dup key: { _id: ObjectId('669599a277eb553a24c89385') }, full error: {'index': 0, 'code': 11000, 'errmsg': "E11000 duplicate key error collection: sqdc_quaie.Fleurs Séchées Hybride 3.5g index: _id_ dup key: { _id: ObjectId('669599a277eb553a24c89385') }", 'keyPattern': {'_id': 1}, 'keyValue': {'_id': ObjectId('669599a277eb553a24c89385')}}
+Data of Lemon Rocket - 628582001743.png inserted successfully.
+Data of Atomic Apple - 628176622903.png inserted successfully.
+Data of Trop Juice - 628693377225.png inserted successfully.
+Data of Craft Animal Face Cookies.PNG inserted successfully.
+Data of Fruity Pebbles OG - 628176622606.png inserted successfully.
+Data of Mint Ribbon - 827885016038.png inserted successfully.
+Data of Voltigeur.png inserted successfully.
+Data of Ultra Grape Kush - 629108240141.png inserted successfully.
+Data of Ucorn Cake - 688083011092.png inserted successfully.
+Data of Citroli - 620376135016.png inserted successfully.
+Data of Molten Core.PNG inserted successfully.
+Data of Apples N' Bananas - 628011959133.png inserted successfully.
+Data of BC Cleopatra Biologique.PNG inserted successfully.
+Data of Swiss Gold.png inserted successfully.
+Data of Orange Tingz.PNG inserted successfully.
+Data of Animal Mints - 628634099957.png inserted successfully.
+Data of Scotti's Cake - 843087001818.png inserted successfully.
+Data of Purple Punch - 832543000045.png inserted successfully.
+Data of Permanent Marker - 628693377409.png inserted successfully.
+Data of Pineapple OG - 628176622514.png inserted successfully.
+Data of QC Limité CBD God Bud - 688083005657.png inserted successfully.
+Data of OG Deluxe - 688083010781.png inserted successfully.
+Data of Funky Fuel - 628069580006.png inserted successfully.
+Data of Goofiez - 628123510024.png inserted successfully.
+Data of BC Watermelon OG - 690395002255.png inserted successfully.
+Data of Sorbetto Sunset.png inserted successfully.
+Data of Grease Monkey - 628176622620.png inserted successfully.
+Data of Mandarin Cookies R2 LSO - 628693106092.png inserted successfully.
+Data of Do-Si-Dos - 628176622927.png inserted successfully.
+Data of Mandarin Cookies - 666592000400.png inserted successfully.
+Data of TH10-16 - 628693095204.png inserted successfully.
+Data of White Rhino - 820939003404.png inserted successfully.
+Data of Black Triangle - 832543000014.png inserted successfully.
+Data of CBD Charlotte Angel Biologique - 628693095051.png inserted successfully.
+Data of Skunk #1 - 814559000356.png inserted successfully.
+Data of BC Canna Bliss - 675136003876.png inserted successfully.
+Data of Grey Scales.png inserted successfully.
+Data of Cookie Driver - 990200000002.png inserted successfully.
+Data of Shockwave 1 1.PNG inserted successfully.
+Data of BLK MLK - 834407002127.png inserted successfully.
+Data of Blue Peppermint - 870857000429.png inserted successfully.
+Data of PR CBD - 870814008123.png inserted successfully.
+Data of Cherry Blossom - 628011336644.png inserted successfully.
+Data of Mandarine Sugar.png inserted successfully.
+Data of Wedding Crasher - 820939002506.png inserted successfully.
+Data of Grimm Glue - 820939001998.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Neon Sunrise",
+  "marque": "Tribal",
+  "variete": "Sativa",
+  "quantite_de_thc": "AAAA - de léger à fort selon la tolérance",
+  "saveurs": ["Orange", "Fermenté"],
+  "potency": "3.5g",
+  "formates": ["Haut", "Miteu"],
+  "type_de_produit": "Fleur séchée",
+  "satisfaction_de_couleur": "Oui",
+  "source": "Cultivé en serre",
+  "qualites": ["Fleurs denses", "Buds généreux en qualité"],
+  "utilisation_recommandee": "Exposition aux rayons du soleil"
+}
+Data of Orange Cake - 628176622897.png inserted successfully.
+Data of Peach Sumo - 628098850910.png inserted successfully.
+Data of Sundae Best.png inserted successfully.
+Data of Moon Berry - 628582002412.png inserted successfully.
+Data of Harmoniser - 694144000196.png inserted successfully.
+Data of Maple Rntz.PNG inserted successfully.
+Data of QC Limité Tango Punch - 688083012242.png inserted successfully.
+Data of Apricot Cream and Cheese 1.1 - 628176622811.png inserted successfully.
+Data of Redecan CBD - 628242248822.png inserted successfully.
+Data of Ono Mandarin Zkittle - 835339000021.png inserted successfully.
+Data of Long Valley Legend - 628693095372.png inserted successfully.
+Data of Velvet Punch Haze Flower - 628693377249.png inserted successfully.
+Data of Black Tuna - 694144015671.png inserted successfully.
+Data of Hash #1 - 870814007003.png inserted successfully.
+Data of Habibi Kush - 628011336835.png inserted successfully.
+Data of Attache ta Tuque - 666592000875.png inserted successfully.
+Data of Haschtag Classique - 814559000103.png inserted successfully.
+Data of Balle de Hash.PNG inserted successfully.
+Data of Haschich Afghan Noir - 817048000288.png inserted successfully.
+Data of Haschich Pressé - 671148011038.png inserted successfully.
+Data of Origine Haschich - 666592000530.png inserted successfully.
+Data of Hashish (promenade).PNG inserted successfully.
+Data of Style Afghan.PNG inserted successfully.
+Data of Rip-Strip Hash.PNG inserted successfully.
+Data of Haschtag CBD - 814559000776.png inserted successfully.
+Data of Haschich de CBD - 628634303139.png inserted successfully.
+Data of Haschich Noir - 824164002263.png inserted successfully.
+Data of Afghan Black CBD - 827763003594.png inserted successfully.
+Data of Marrakech Gold.png inserted successfully.
+Data of Lemon Skunk - 628098850453.png inserted successfully.
+Data of Crumbled Lime Style Pressé - 800129904209.png inserted successfully.
+Data of Joints de Haschich - 688083017087.png inserted successfully.
+Data of Jean-Guy Temple Ball Hash.PNG inserted successfully.
+Data of H4 Old School - 628634303269.png inserted successfully.
+Data of Haschtag Hash de Rosine - 814559000783.png inserted successfully.
+Data of Haschich - 628634099766.png inserted successfully.
+Data of Drip N' Jiggle Old School - 628124820115.png inserted successfully.
+Data of Dans ma Bulle.PNG inserted successfully.
+Data of Old School Hash.png inserted successfully.
+Data of Grand Royal Hash - 628123510017.png inserted successfully.
+Data of Style 1980.PNG inserted successfully.
+Data of Ginger Fizz.PNG inserted successfully.
+Data of Grand Daddy Purps Temple Ball - 824165002712.png inserted successfully.
+Data of Ice Water Hash.png inserted successfully.
+Data of Louvre.PNG inserted successfully.
+Data of Haschtag Harmonie - 814559000516.png inserted successfully.
+No Data extracted for Mazar Sharif - 628176600727.png
+An error occurred while inserting data of Mazar Sharif - 628176600727.png: E11000 duplicate key error collection: sqdc_quaie.Hashish index: _id_ dup key: { _id: ObjectId('66959ee577eb553a24c893e1') }, full error: {'index': 0, 'code': 11000, 'errmsg': "E11000 duplicate key error collection: sqdc_quaie.Hashish index: _id_ dup key: { _id: ObjectId('66959ee577eb553a24c893e1') }", 'keyPattern': {'_id': 1}, 'keyValue': {'_id': ObjectId('66959ee577eb553a24c893e1')}}
+Data of Haschich Libanais.png inserted successfully.
+Data of Hasch de Raisins.PNG inserted successfully.
+Data of sage'n'sour.PNG inserted successfully.
+Data of H29 Old School - 628634303160.png inserted successfully.
+Data of Ghost Train Haze - 628098850460.png inserted successfully.
+Data of Hachisch Afghan Équilibré - 688083013850.png inserted successfully.
+Data of Rouleau de Haschich - 628634099933.png inserted successfully.
+Data of La Libanaise.png inserted successfully.
+Data of OG Hawa├пenne - 628011336545.png inserted successfully.
+Data of Hasch de Raisin - 875429000838.png inserted successfully.
+Data of Hasch de Zsweet - 628634099919.png inserted successfully.
+Data of Ono Onyx.PNG inserted successfully.
+Data of Héritage - 620376135085.png inserted successfully.
+Data of Boule de Laine - 820939001530.png inserted successfully.
+Data of Haschtag Hash de Noé - 814559000820.png inserted successfully.
+Data of Le Kush X - 628011336552.png inserted successfully.
+Data of Eiffel - 628518000437.png inserted successfully.
+Data of QC Kief - 628176622286.png inserted successfully.
+Data of Xkief.PNG inserted successfully.
+Data of Tiziri Kief - 843087005557.png inserted successfully.
+Data of Nordique Rosine - 628098850613.png inserted successfully.
+Data of Lemon Haze Résine Fra├оche - 842572002460.png inserted successfully.
+Data of Doze╠Б - 628069580662.png inserted successfully.
+Data of Kizos QC Hash - 628176622354.png inserted successfully.
+Data of Citroli - 620376125048.png inserted successfully.
+Data of Complice - 627987928167.png inserted successfully.
+Data of Harmoniser - 694144015961.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Spray de protection",
+  "marque": "MAC 1",
+  "caracteristiques": [
+    "Nom du produit: Spray de protection",
+    "Forme du produit: Aerosol",
+    "Goût: Aucun",
+    "Variété: 3Xe 5g",
+    "Format: 5g",
+    "Description du produit: Agréable façon de consommer le CBD",
+    "Lieux de culture de la centrale: Canada",
+    "Culture hydroponique: Oui",
+    "Méthode de culture: Serre hybride",
+    "Couleur: Blanc",
+    "Affinage: Séchage par le plat – ébarbage fin et blanc",
+    "Type de culture: Ne conduit pas ou ne produit pas de machinerie lourde",
+    "Coût du matériel de culture: Bas",
+    "Temps d'utilisation et effets potentiels: 90 secondes/5 minutes"
+  ]
+}
+Data of Wedding Cake - 870814004217.png inserted successfully.
+Data of La Bo├оte Noire Essence Gazeuse - 838728000367.png inserted successfully.
+Data of Rares - 878865000332.png inserted successfully.
+Data of Moby Dick - 620376111119.png inserted successfully.
+Data of Velvet Punch Haze - 628693377256.png inserted successfully.
+Data of Moitié-Moitié - 875429000845.png inserted successfully.
+Data of Apricot Cream and Cheese 1.1 - 628176622828.png inserted successfully.
+Data of Sour Tangie - 628634951187.png inserted successfully.
+Data of BC Harlequin Biologique.PNG inserted successfully.
+Data of Les Gros CBDs - 870857001594.png inserted successfully.
+Data of Skunk Haze Bio - 827763003051.png inserted successfully.
+Data of Bruce Banner - 870814004040.png inserted successfully.
+Data of Cotton Candy - 841432042035.png inserted successfully.
+Data of Garlic Sherbet - 875429000043.png inserted successfully.
+Data of Wedding Cake - 841432012793.png inserted successfully.
+Data of Platinum Kush Breath - 688083014154.png inserted successfully.
+Data of Dans la Lune - 870857001044.png inserted successfully.
+Data of Melon Gum - 870814004545.png inserted successfully.
+Data of Dia de los Muertos.PNG inserted successfully.
+Data of Sunshine Bubble Kush - 628242701754.png inserted successfully.
+Data of Deep Mandarine - 628942251023.png inserted successfully.
+Data of Terple.png inserted successfully.
+Data of Neon Sunshine - 628124825356.png inserted successfully.
+Data of Sapphire Cookies - 827885013532.png inserted successfully.
+Data of Gorilla Breath - 870814003715.png inserted successfully.
+Data of Blue Iguana - 688083011429.png inserted successfully.
+Data of Jet Fuel Gelato - 820939001660.png inserted successfully.
+Data of Cocoa Bomba - 841432012755.png inserted successfully.
+Data of Pink Rozay - 628242263740.png inserted successfully.
+Data of Slurricane Mint.PNG inserted successfully.
+Data of Lemon Skunk OG.PNG inserted successfully.
+Data of Findlay CBD Rotatif - 870857000764.png inserted successfully.
+No Data extracted for Le Trio de Chanvre - 834407002196.png
+An error occurred while inserting data of Le Trio de Chanvre - 834407002196.png: E11000 duplicate key error collection: sqdc_quaie.Pré-roulés Hybride index: _id_ dup key: { _id: ObjectId('6695a24d77eb553a24c8941c') }, full error: {'index': 0, 'code': 11000, 'errmsg': "E11000 duplicate key error collection: sqdc_quaie.Pré-roulés Hybride index: _id_ dup key: { _id: ObjectId('6695a24d77eb553a24c8941c') }", 'keyPattern': {'_id': 1}, 'keyValue': {'_id': ObjectId('6695a24d77eb553a24c8941c')}}
+Data of BC Vanilla Frost - 690395002248.png inserted successfully.
+Data of Roulé de Chanvre Ananas Infusé - 824165002699.png inserted successfully.
+Data of Moon Berry - 628582002474.png inserted successfully.
+Data of Mandarine Sugar.PNG inserted successfully.
+Data of Black Triangle - 83254300052.png inserted successfully.
+Data of Frosted Cream Puffs - 841432012748.png inserted successfully.
+Data of Strawberry Guava - 820939003701.png inserted successfully.
+Data of Iced Guava Gelato.PNG inserted successfully.
+Data of Pineapple - 870814004033.png inserted successfully.
+Data of Blueberry Funk.PNG inserted successfully.
+Data of Bubble Mints - 820939002261.png inserted successfully.
+Data of Mango - 628634099858.png inserted successfully.
+Data of Berri Wraps - 842572000954.png inserted successfully.
+Data of OG Deluxe - 688083011085.png inserted successfully.
+Data of Mandarin Cookies - 666592000400.png inserted successfully.
+Data of Harmoniser - 694144009212.png inserted successfully.
+Data of Purple Punch - 83254300083.png inserted successfully.
+Data of BC Canna Bliss - 675136003876.png inserted successfully.
+Data of Feeldoux - 666592000844.png inserted successfully.
+Data of Oregon CBD - 628634099940.png inserted successfully.
+Data of Caprice - 628942229381.png inserted successfully.
+Data of Funky Legend - 688083014918.png inserted successfully.
+Data of Pennywise 1-1 - 820939002360.png inserted successfully.
+Data of Spinach Purple Lava.PNG inserted successfully.
+Data of Zkittles - 870814004224.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Ça Roule Ma Poule",
+  "marque": "CANNAFR∠GS",
+  "poids": "30x0.5g",
+  "culture": "Québec",
+  "type": "Hybride",
+  "effets_potentiels": ["Calme", "Relaxation", "Sommeil"],
+  "temps_reaction": "90 secondes après l'inhalation",
+  "avertissement": "Évitez les mélanges avec d'autres substances : tabac, alcool et médicaments"
+}
+Data of Trop Juice - 628693377157.png inserted successfully.
+Data of Jungle Cake - 827763003433.png inserted successfully.
+Data of Fa├зade - 628123510055.png inserted successfully.
+this response wasn't inserted into mongo :
+Malheureusement, je suis incapable de lire les textes en images car mes capacités d'analyse d'image ne comprennent pas la fonction OCR (Optical Character Recognition). Si vous pouvez me fournir les informations en texte, je serai ravi de vous aider à créer un JSON pour l'insertion dans MongoDB.
+Data of Emergenz.PNG inserted successfully.
+Data of Long Valley Legend - 628693095402.png inserted successfully.
+Data of ACDC - 814559000554.png inserted successfully.
+Data of Blueberry Fuego.PNG inserted successfully.
+Data of Citadelle - 628634951200.png inserted successfully.
+Data of Joint de CBD Biologique.PNG inserted successfully.
+Data of Pineapple Express - 824165002675.png inserted successfully.
+Data of Imagination Liquide - 666592000905.png inserted successfully.
+Data of Blue Chemo - 666592000653.png inserted successfully.
+Data of Pétard Coupe Droite - 628176223445.png inserted successfully.
+Data of Ono Grape Diamonds - 835339000175.png inserted successfully.
+Data of Jacques Haze Ultra.PNG inserted successfully.
+Data of Drip N' Jiggle Grind - 628124815081.png inserted successfully.
+Data of Le MAC-1 - 671148011113.png inserted successfully.
+Data of Mango Haze - 628242801171.png inserted successfully.
+Data of Zip - 878865001001.png inserted successfully.
+Data of Warlock - 628242242851.png inserted successfully.
+Data of RRW - 628090610154.png inserted successfully.
+Data of Qc limité Blue Iguana - 688083011429.png inserted successfully.
+Data of Gasberry Pie - 629108299149.png inserted successfully.
+Data of Cyber Fuel OG - 629108285142.png inserted successfully.
+Data of Megaton Melon #4.PNG inserted successfully.
+Data of Pine Tar Kush - 820939001622.png inserted successfully.
+Data of Lab 101 - 628176622804.png inserted successfully.
+Data of Blueberry Muffins.PNG inserted successfully.
+Data of L'Joe Louis - 666592000882.png inserted successfully.
+Data of Cherry Blossom - 628634303085.png inserted successfully.
+Data of Afghan Skunk - 824164004373.png inserted successfully.
+Data of White Mac - 628582003013.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Lemon Meringue Pie",
+  "marque": "Tweed",
+  "type": "Sativa",
+  "urgence": "Ne pas utiliser près des machines motorisées",
+  "couleur": "Vert clair avec des traces de blanc",
+  "origine": "Ontario",
+  "méthodeDeCulture": "Culture en serre, Manucure à sec",
+  "caractéristiques": "Séchage en suspension",
+  "effetsPotentiels": ["Euphorie"],
+  "potentielTHC": "5%",
+  "potentielCBD": "0.07%",
+  "tempsDeRendement": "50 jours",
+  "recommandations": ["Idéal après une journée stressante"],
+  "dimensionsPaquet": "Contient 3.5 grammes",
+  "conservation": ["Conserver dans un endroit frais, sec et à l'abri de la lumière"],
+  "avertissements": ["Interdit aux moins de 18 ans", "Ne convient pas pour une consommation avant de conduire"]
+}
+Data of Harlequin 1-1 - 820939002254.png inserted successfully.
+Data of CBD Shark - 628242701730.png inserted successfully.
+Data of Scout 91k.PNG inserted successfully.
+Data of Duplex - 688083015526.png inserted successfully.
+Data of Spinach Lemon Skunk.PNG inserted successfully.
+Data of Ultra Sour - 827885015550.png inserted successfully.
+Data of Grapefruit Tangie - 820939005545.png inserted successfully.
+Data of Sélections de Petits Lots - 628242321365.png inserted successfully.
+Data of Spinach Vanilla Kush.PNG inserted successfully.
+Data of Spinach Tangerine Twist - 841432010560.png inserted successfully.
+Data of Pink Cookies - 671148601222.png inserted successfully.
+Data of Strawberry Frappé - 688083017179.png inserted successfully.
+Data of Melon Dream.PNG inserted successfully.
+Data of London Pound Mints.PNG inserted successfully.
+Data of Le Gaz à Lise - 666592000684.png inserted successfully.
+Data of BC God Bud - 824164002249.png inserted successfully.
+Data of Frozen Lemons - 671148011090.png inserted successfully.
+Data of Cherry #3 - 628634303283.png inserted successfully.
+Data of Vanilla Gelato - 671148011106.png inserted successfully.
+Data of Nugz Hybride - 628124828197.png inserted successfully.
+Data of Special Haze - 820939005378.png inserted successfully.
+Data of Lemon Meringue.PNG inserted successfully.
+Data of Alien Gelato.PNG inserted successfully.
+Data of Sweet Berry Kush - 824165002590.png inserted successfully.
+Data of Lemon Kush - 688083010903.png inserted successfully.
+Data of 1-1 Balancé AAAA - 628693095396.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Moon Berry",
+  "marque": "San Rafael",
+  "type": "Hybride (ÉGR) séchée",
+  "THC": "18%",
+  "CBD": "inférieur à 1%",
+  "quantité": "15 g",
+  "emballage": ["Contient un sachet régulateur d'humidité", "Fermeture à glissière"],
+  "utilisation": "Utiliser sous la supervision d'un professionnel de santé",
+  "effets_potentiels": ["Détente", "Calme", "Lucidité"],
+  "temps_recommandé": "de 30 à 60 secondes à environ 5 minutes après ingestion"
+}
+Data of Duo Sorbet Cerise et Lime - 666592000967.png inserted successfully.
+Data of Comatose - 688318002338.png inserted successfully.
+Data of Galactic Gas - 824164004380.png inserted successfully.
+Data of Green Gelato - 824164004328.png inserted successfully.
+Data of Peanut Butter Cake - 688083011900.png inserted successfully.
+Data of Moulu Infusé au Haschich - 628176223216.png inserted successfully.
+Data of Spinach Purple Lava.PNG inserted successfully.
+Data of Triple Blue - 827885015970.png inserted successfully.
+this response wasn't inserted into mongo :
+{
+  "nom": "Kosher Kush OG x Colein OG",
+  "marque": "FI",
+  "cultive": "En serre, L.P.F",
+  "description": "Une des souches les plus puissantes de cannabis hybride dans la famille des indicas puissantes.",
+  "dominance": "Indica", 
+  "techniques": ["Défleur de sixième semaine : séchage en série", "Techniques combinant différentes valeurs d'ensoleillement", "Plateau tournant de cannabis"],
+  "couleurs": ["vertes", "pistils orange"],
+  "effets": ["Détendu", "Heureux", "Euphorique"],
+  "delaiEffets": "90 secondes après inhalation",
+  "avertissement": "Évitez les mélanges avec d'autres substances : tabac, alcool et médicaments."
+}
+Data of Animal RNTZ - 824165002538.png inserted successfully.
+Data of Spinach Purple Lava - 841432010690.png inserted successfully.
+Data of BC White Rainbow Biologique.PNG inserted successfully.
+Data of Lemon Pepper Punch.PNG inserted successfully.
+Data of Durban Gorilla Bio - 827763003273.png inserted successfully.
+Data of H27 Indica - 628634303412.png inserted successfully.
+Data of Painted Lady.PNG inserted successfully.
+Data of Ultra Jean-G.PNG inserted successfully.
+Data of Moulu du BC - 688318002307.png inserted successfully.
+Data of La Moulinette - 820939003640.png inserted successfully.
+Data of Slerple Grind.PNG inserted successfully.
+Data of Mordant XL - 671148304192.png inserted successfully.
+Data of Mélange de Fruits - 820939002186.png inserted successfully.
+Data of Joints Non-Roulés Indica.PNG inserted successfully.
+Data of MiXK - 814559000325.png inserted successfully.
+Data of CBD à la Lime - 628634303306.png inserted successfully.
+Data of Tropical and Twisted - 628242802444.png inserted successfully.
+Data of De La Ferme тАФ CBD Moulu.png inserted successfully.
+Data of Trois Fromages.PNG inserted successfully.
+Data of Niaise pas avec la Puck - 666592000141.png inserted successfully.
+Data of Citron XXX  Moulu.png inserted successfully.
+Data of Bête de Diesel - 671148301108.png inserted successfully.
+Data of H10 Moulu - 628634303207.png inserted successfully.
+Data of Première Mouture - 628176223919.png inserted successfully.
+Error decoding JSON for caracteristiques_produit: Unterminated string starting at: line 1 column 13 (char 12)
+Data of Mélange Floral.PNG inserted successfully.
+Data of La roche.PNG inserted successfully.

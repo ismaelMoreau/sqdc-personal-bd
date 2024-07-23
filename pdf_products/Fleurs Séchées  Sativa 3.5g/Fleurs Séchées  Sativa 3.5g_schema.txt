@@ -1,0 +1,76 @@
+Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer une variété de détails sur les produits de cannabis.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "produit": {
+      "type": "object",
+      "properties": {
+        "marque": { "type": "string" },
+        "nom": { "type": "string" },
+        "espece": { "type": "string" },
+        "dominance": { "type": "string" },
+        "format": { "type": "string" },
+        "variete": { "type": "string" },
+        "genetique": { "type": "string" },
+        "couleur_fleur": { "type": "string" },
+        "partie_utilisee": { "type": "string" },
+        "sachet_humidite": { "type": "string" },
+        "lieu_culture": { "type": "string" },
+        "methode_culture": { "type": "string" },
+        "temps_apparition_effets": { "type": "string" },
+        "effets_potentiels": { "type": "array", "items": { "type": "string" } },
+        "message_avertissement": { "type": "string" }
+      },
+      "required": [
+        "marque",
+        "nom",
+        "espece",
+        "dominance",
+        "format",
+        "variete",
+        "lieu_culture",
+        "methode_culture",
+        "partie_utilisee",
+        "temps_apparition_effets",
+        "effets_potentiels"
+      ]
+    },
+    "culture": {
+      "type": "object",
+      "properties": {
+        "lieu": { "type": "string" },
+        "methode": { "type": "string" },
+        "processus_affinage": { "type": "string" }
+      }
+    }
+  }
+}
+```
+
+### Explication des champs :
+
+- **produit** : Contient des informations spécifiques sur le produit de cannabis.
+  - **marque** : La marque du produit.
+  - **nom** : Le nom du produit.
+  - **espece** : L'espèce de cannabis (ex. : Sativa, Indica).
+  - **dominance** : La dominance de l'espèce (ex. : Sativa).
+  - **format** : Le poids ou le format du produit (ex. : 3.5g).
+  - **variete** : La variété spécifique du produit.
+  - **genetique** : Les parents génétiques du produit.
+  - **couleur_fleur** : La couleur des fleurs.
+  - **partie_utilisee** : La partie de la plante utilisée.
+  - **sachet_humidite** : Informations sur l'humidité.
+  - **lieu_culture** : Lieu où le produit a été cultivé.
+  - **methode_culture** : Méthode de culture utilisée.
+  - **temps_apparition_effets** : Temps nécessaire pour que les effets se manifestent.
+  - **effets_potentiels** : Liste des effets potentiels du produit.
+  - **message_avertissement** : Avertissements concernant l'utilisation.
+
+- **culture** : Détails sur la culture du produit.
+  - **lieu** : Lieu de culture.
+  - **methode** : Méthode de culture.
+  - **processus_affinage** : Détails sur le processus d'affinage.
+
+Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sur les produits de cannabis sont correctement structurées.

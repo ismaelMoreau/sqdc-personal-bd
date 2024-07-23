@@ -1,0 +1,102 @@
+Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits de cannabis moulus.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "produit": {
+      "type": "string"
+    },
+    "marque": {
+      "type": "string"
+    },
+    "format": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "espèce": {
+      "type": "string"
+    },
+    "dominance": {
+      "type": "string"
+    },
+    "variété": {
+      "type": "string"
+    },
+    "génétique": {
+      "type": "string"
+    },
+    "lieu_de_culture": {
+      "type": "string"
+    },
+    "méthode_de_culture": {
+      "type": "string"
+    },
+    "type_de_mouture": {
+      "type": "string"
+    },
+    "cultivé_Québec": {
+      "type": "boolean"
+    },
+    "sachet_dhumidité": {
+      "type": "boolean"
+    },
+    "effets_potentiels": {
+      "type": "string"
+    },
+    "temps_appartion_effets": {
+      "type": "string"
+    },
+    "message_avertissement": {
+      "type": "string"
+    },
+    "emballage": {
+      "type": "string"
+    },
+    "qualité": {
+      "type": "string"
+    },
+    "terpène": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "produit",
+    "marque",
+    "format",
+    "espèce",
+    "dominance",
+    "variété",
+    "génétique",
+    "lieu_de_culture",
+    "méthode_de_culture",
+    "type_de_mouture",
+    "cultivé_Québec",
+    "sachet_dhumidité",
+    "effets_potentiels",
+    "temps_appartion_effets"
+  ]
+}
+```
+
+### Explication des champs :
+- **produit** : Nom du produit (ex. "Moulu du BC").
+- **marque** : Marque du produit (ex. "Homestead Cannabis Supply").
+- **format** : Poids du produit en grammes (ex. 15).
+- **espèce** : Espèce de cannabis (ex. "Hybride").
+- **dominance** : Dominance génétique (ex. "Mélange").
+- **variété** : Variété spécifique (ex. "Mélange").
+- **génétique** : Détails sur la génétique (ex. "Slapz + Terple").
+- **lieu_de_culture** : Localisation de la culture (ex. "Delta, CB").
+- **méthode_de_culture** : Méthode utilisée pour cultiver (ex. "Culture hydroponique").
+- **type_de_mouture** : Type de mouture (ex. "Broyée finement").
+- **cultivé_Québec** : Indique si le produit est cultivé au Québec (true/false).
+- **sachet_dhumidité** : Indique si un sachet d'humidité est inclus (true/false).
+- **effets_potentiels** : Effets ressentis (ex. "Relaxation, détente").
+- **temps_appartion_effets** : Temps nécessaire pour ressentir les effets (ex. "90 secondes à 5 minutes après inhalation").
+- **message_avertissement** : Avertissements concernant la consommation.
+- **emballage** : Type d'emballage (ex. "Boîte de conserve hermétique").
+- **qualité** : Qualité du produit (ex. "AAAA").
+- **terpène** : Pourcentage de terpènes (ex. "2% - 4%"). 
+
+Ce schéma peut être utilisé pour structurer les données dans une base de données MongoDB, facilitant ainsi la gestion et la recherche d'informations sur les produits de cannabis.

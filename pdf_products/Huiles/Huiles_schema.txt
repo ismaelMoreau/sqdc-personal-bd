@@ -1,0 +1,79 @@
+Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits à base de CBD et de THC.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "produit": {
+      "type": "string"
+    },
+    "marque": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "volume": {
+      "type": "number"
+    },
+    "methode_extraction": {
+      "type": "string"
+    },
+    "mode_consommation": {
+      "type": "string"
+    },
+    "dosage": {
+      "type": "string"
+    },
+    "effets_potentiels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "message_alerte": {
+      "type": "string"
+    },
+    "lieu_fabrication": {
+      "type": "string"
+    },
+    "delai_effets": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "produit",
+    "marque",
+    "format",
+    "volume",
+    "methode_extraction",
+    "mode_consommation",
+    "dosage",
+    "effets_potentiels",
+    "ingredients"
+  ]
+}
+```
+
+### Explication des champs :
+
+- **produit** : Nom du produit (ex. "CBD 30:15").
+- **marque** : Nom de la marque (ex. "Orchid CBD").
+- **format** : Type de produit (ex. "Huile").
+- **volume** : Volume du produit en ml (ex. 30).
+- **methode_extraction** : Méthode utilisée pour extraire le CBD/THC (ex. "Éthanol à froid").
+- **mode_consommation** : Comment le produit doit être consommé (ex. "Syringe 1ml").
+- **dosage** : Dosage recommandé (ex. "Commencez bas et allez lentement").
+- **effets_potentiels** : Liste des effets potentiels (ex. ["Relaxation", "Euphorie"]).
+- **ingredients** : Liste des ingrédients (ex. ["Huile de noix de coco", "Extrait de cannabis"]).
+- **message_alerte** : Avertissements ou précautions (ex. "Entrez les produits de manière sécuritaire").
+- **lieu_fabrication** : Lieu où le produit est fabriqué (ex. "Québec").
+- **delai_effets** : Délai d'apparition des effets (ex. "Après 30 minutes").
+
+Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sur les produits sont correctement enregistrées.

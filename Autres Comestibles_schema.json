@@ -1,0 +1,109 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "_id",
+      "effets_potentiels",
+      "package",
+      "poids",
+      "quantite",
+      "mode_de_consommation",
+      "taux_de_THC",
+      "disponibilite",
+      "mode",
+      "presentations",
+      "sans",
+      "temps_de_reaction",
+      "message_d_avertissement",
+      "marque",
+      "type",
+      "produit_id",
+      "description",
+      "format",
+      "ingredients",
+      "type_de_produit",
+      "capacite",
+      "allergenes",
+      "efficacite",
+      "nom",
+      "attributs"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId"
+      },
+      "effets_potentiels": {
+        "bsonType": "string"
+      },
+      "package": {
+        "bsonType": "string"
+      },
+      "poids": {
+        "bsonType": "string"
+      },
+      "quantite": {
+        "bsonType": "string"
+      },
+      "mode_de_consommation": {
+        "bsonType": "string"
+      },
+      "taux_de_THC": {
+        "bsonType": "string"
+      },
+      "disponibilite": {
+        "bsonType": "string"
+      },
+      "mode": {
+        "bsonType": "string"
+      },
+      "presentations": {
+        "bsonType": "string"
+      },
+      "sans": {
+        "bsonType": "string"
+      },
+      "temps_de_reaction": {
+        "bsonType": "string"
+      },
+      "message_d_avertissement": {
+        "bsonType": "string"
+      },
+      "marque": {
+        "bsonType": "string"
+      },
+      "type": {
+        "bsonType": "string"
+      },
+      "produit_id": {
+        "bsonType": "string"
+      },
+      "description": {
+        "bsonType": "string"
+      },
+      "format": {
+        "bsonType": "string"
+      },
+      "ingredients": {
+        "bsonType": "string"
+      },
+      "type_de_produit": {
+        "bsonType": "string"
+      },
+      "capacite": {
+        "bsonType": "string"
+      },
+      "allergenes": {
+        "bsonType": "string"
+      },
+      "efficacite": {
+        "bsonGenType": "string"
+      },
+      "nom": {
+        "bsonType": "string"
+      },
+      "attributs": {
+        "bsonType": "string"
+      }
+    }
+  }
+}

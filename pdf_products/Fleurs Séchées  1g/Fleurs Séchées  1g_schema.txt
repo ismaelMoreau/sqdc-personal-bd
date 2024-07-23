@@ -1,0 +1,87 @@
+Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer une variété de détails sur les produits de cannabis.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "produit": {
+      "type": "string"
+    },
+    "espece": {
+      "type": "string",
+      "enum": ["Indica", "Sativa", "Hybride"]
+    },
+    "variété": {
+      "type": "string"
+    },
+    "génétique": {
+      "type": "string"
+    },
+    "poids": {
+      "type": "number",
+      "minimum": 0
+    },
+    "lieu_de_culture": {
+      "type": "string"
+    },
+    "méthode_de_culture": {
+      "type": "string",
+      "enum": ["Intérieur", "Extérieur", "Hydroponique"]
+    },
+    "processus_d_affinage": {
+      "type": "string"
+    },
+    "sachet_humidité": {
+      "type": "boolean"
+    },
+    "couleur_de_la_fleur": {
+      "type": "string"
+    },
+    "effets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "temps_apparition_effets": {
+      "type": "string"
+    },
+    "micro_producteur": {
+      "type": "string"
+    },
+    "message_avertissement": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "produit",
+    "espece",
+    "variété",
+    "poids",
+    "lieu_de_culture",
+    "méthode_de_culture",
+    "processus_d_affinage",
+    "effets",
+    "temps_apparition_effets"
+  ]
+}
+```
+
+### Explication des champs :
+
+- **produit** : Nom du produit.
+- **espece** : Type de cannabis (Indica, Sativa, Hybride).
+- **variété** : Nom spécifique de la variété.
+- **génétique** : Informations sur la génétique de la variété.
+- **poids** : Poids du produit en grammes.
+- **lieu_de_culture** : Localisation où le cannabis a été cultivé.
+- **méthode_de_culture** : Méthode utilisée pour cultiver le cannabis (intérieur, extérieur, hydroponique).
+- **processus_d_affinage** : Détails sur le processus d'affinage.
+- **sachet_humidité** : Indique si un sachet d'humidité est inclus.
+- **couleur_de_la_fleur** : Description de la couleur de la fleur.
+- **effets** : Liste des effets potentiels du produit.
+- **temps_apparition_effets** : Temps nécessaire pour que les effets se manifestent.
+- **micro_producteur** : Nom du micro-producteur.
+- **message_avertissement** : Avertissements concernant la consommation.
+
+Ce schéma permet de structurer les données de manière à ce qu'elles soient facilement accessibles et compréhensibles.

@@ -1,0 +1,52 @@
+Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits de cannabis préroulés.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "produit": {
+      "type": "object",
+      "properties": {
+        "marque": { "type": "string" },
+        "nom": { "type": "string" },
+        "espece": { "type": "string", "enum": ["Indica", "Sativa", "Hybride"] },
+        "format": { "type": "string" },
+        "variete": { "type": "string" },
+        "genetique": { "type": "string" },
+        "couleur": { "type": "string" },
+        "description": { "type": "string" }
+      },
+      "required": ["marque", "nom", "espece", "format", "variete"]
+    },
+    "culture": {
+      "type": "object",
+      "properties": {
+        "lieu": { "type": "string" },
+        "methode": { "type": "string" },
+        "type_de_broyage": { "type": "string" },
+        "type_de_papier": { "type": "string" },
+        "humidite": { "type": "boolean" }
+      },
+      "required": ["lieu", "methode"]
+    },
+    "utilisation": {
+      "type": "object",
+      "properties": {
+        "effets": { "type": "array", "items": { "type": "string" } },
+        "delai_effets": { "type": "string" },
+        "message_avertissement": { "type": "string" }
+      },
+      "required": ["effets", "delai_effets"]
+    }
+  },
+  "required": ["produit", "culture", "utilisation"]
+}
+```
+
+### Explication des champs :
+
+- **produit** : Contient des informations sur le produit, y compris la marque, le nom, l'espèce, le format, la variété, la génétique, la couleur et une description.
+- **culture** : Détails sur l'endroit et la méthode de culture, le type de broyage, le type de papier utilisé et si un sachet d'humidité est inclus.
+- **utilisation** : Informations sur les effets potentiels, le délai d'apparition des effets et un message d'avertissement.
+
+Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sont correctement structurées.

@@ -1,0 +1,91 @@
+Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits de cannabis, en mettant l'accent sur la richesse des données.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "produit": {
+      "type": "string"
+    },
+    "marque": {
+      "type": "string"
+    },
+    "espèce": {
+      "type": "string",
+      "enum": ["Indica", "Sativa", "Hybride"]
+    },
+    "format": {
+      "type": "number",
+      "minimum": 0
+    },
+    "génétique": {
+      "type": "string"
+    },
+    "culture": {
+      "type": "object",
+      "properties": {
+        "lieu": {
+          "type": "string"
+        },
+        "méthode": {
+          "type": "string",
+          "enum": ["Intérieure", "Extérieure", "Hydroponique"]
+        },
+        "partie": {
+          "type": "string"
+        },
+        "affinage": {
+          "type": "string"
+        }
+      },
+      "required": ["lieu", "méthode"]
+    },
+    "caractéristiques": {
+      "type": "object",
+      "properties": {
+        "couleur": {
+          "type": "string"
+        },
+        "pistils": {
+          "type": "string"
+        },
+        "sachet_humidité": {
+          "type": "boolean"
+        }
+      }
+    },
+    "effets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "temps_app": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "produit",
+    "marque",
+    "espèce",
+    "format",
+    "culture",
+    "effets",
+    "temps_app"
+  ]
+}
+```
+
+### Explication des champs :
+
+- **produit** : Nom du produit (ex. "Dough Lato").
+- **marque** : Marque du produit (ex. "Wôla!").
+- **espèce** : Type de cannabis (Indica, Sativa, Hybride).
+- **format** : Poids du produit en grammes (ex. 3.5).
+- **génétique** : Croisement ou variété (ex. "Dolato x Moonbow").
+- **culture** : Détails sur la culture, incluant le lieu, la méthode, la partie du plant utilisée, et le type d'affinage.
+- **caractéristiques** : Informations sur la couleur de la fleur, les pistils, et si un sachet d'humidité est inclus.
+- **effets** : Liste des effets potentiels (ex. "Relaxation", "Euphorie").
+- **temps_app** : Temps d'apparition des effets après inhalation (ex. "90 secondes à 5 minutes"). 
+
+Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sur les produits de cannabis sont correctement structurées.

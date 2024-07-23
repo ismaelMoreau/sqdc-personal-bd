@@ -1,0 +1,113 @@
+Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer une variété de produits infusés au cannabis, en mettant l'accent sur les détails nutritionnels, les effets potentiels et d'autres caractéristiques pertinentes.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "produit": {
+      "type": "string"
+    },
+    "marque": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "valeur_nutritive": {
+      "type": "object",
+      "properties": {
+        "calories": {
+          "type": "integer"
+        },
+        "lipides": {
+          "type": "number"
+        },
+        "glucides": {
+          "type": "number"
+        },
+        "proteines": {
+          "type": "number"
+        },
+        "fibres": {
+          "type": "number"
+        },
+        "sucres": {
+          "type": "number"
+        },
+        "sodium": {
+          "type": "number"
+        },
+        "potassium": {
+          "type": "number"
+        },
+        "calcium": {
+          "type": "number"
+        },
+        "fer": {
+          "type": "number"
+        }
+      },
+      "required": ["calories"]
+    },
+    "effets_potentiels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "temps_appartion_effets": {
+      "type": "string"
+    },
+    "partenaire_production": {
+      "type": "string"
+    },
+    "texture": {
+      "type": "string"
+    },
+    "methode_integration": {
+      "type": "string"
+    },
+    "allergenes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "avertissement": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "produit",
+    "marque",
+    "format",
+    "ingredients",
+    "valeur_nutritive",
+    "effets_potentiels",
+    "temps_appartion_effets"
+  ]
+}
+```
+
+### Explication des champs :
+
+- **produit** : Nom du produit.
+- **marque** : Marque du produit.
+- **format** : Format de l'emballage (ex. : 355ml, 4 unités).
+- **ingredients** : Liste des ingrédients.
+- **valeur_nutritive** : Détails nutritionnels, incluant calories, lipides, glucides, etc.
+- **effets_potentiels** : Liste des effets potentiels du produit.
+- **temps_appartion_effets** : Délai d'apparition des effets après ingestion.
+- **partenaire_production** : Partenaire de production du produit.
+- **texture** : Texture du produit (ex. : malléable, croustillant).
+- **methode_integration** : Méthode d'intégration des cannabinoïdes.
+- **allergenes** : Liste des allergènes potentiels.
+- **avertissement** : Avertissements concernant la consommation du produit.
+
+Ce schéma peut être utilisé pour structurer les données des produits infusés au cannabis dans une base de données MongoDB, facilitant ainsi la gestion et la recherche d'informations.

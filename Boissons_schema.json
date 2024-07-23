@@ -1,0 +1,73 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "_id",
+      "description",
+      "typeProduit",
+      "societe_de_fabrication"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "objectId",
+        "description": "Doit être un ObjectId et est requis"
+      },
+      "description": {
+        "bsonType": "string",
+        "description": "Description du produit en chaîne de caractères"
+      },
+      "typeProduit": {
+        "bsonType": "string",
+        "description": "Type de produit en chaîne de caractères"
+      },
+      "societe_de_fabrication": {
+        "bsonType": "string",
+        "description": "Nom de la société de fabrication en chaîne de caractères"
+      },
+      "effets_potentiels": {
+        "bsonType": "string",
+        "description": "Effets potentiels du produit en chaîne de caractères"
+      },
+      "durée_effets": {
+        "bsonType": "string",
+        "description": "Durée des effets en chaîne de caractères"
+      },
+      "sodium_par_dose": {
+        "bsonType": "string",
+        "description": "Quantité de sodium par dose en chaîne de caractères"
+      },
+      "total_gras": {
+        "bsonType": "string",
+        "description": "Total des gras en chaîne de caractères"
+      },
+      "calories": {
+        "bsonType": "string",
+        "description": "Nombre de calories en chaîne de caractères"
+      },
+      "protein": {
+        "bsonType": "string",
+        "description": "Quantité de protéines en chaîne de caractères"
+      },
+      "carbohydrates": {
+        "bsonType": "string",
+        "description": "Quantité de glucides en chaîne de caractères"
+      },
+      "vitamine_D": {
+        "bsonType": "string",
+        "description": "Contenu de vitamine D en chaîne de caractères"
+      },
+      "iron": {
+        "bsonType": "string",
+        "description": "Quantité de fer en chaîne de caractères"
+      },
+      "vitamin_D": {
+        "bsonType": "string",
+        "description": "Quantité de vitamine D (autre appellation) en chaîne de caractères"
+      },
+      "liste_ingredients": {
+        "bsonType": "string",
+        "description": "Liste des ingrédients en chaîne de caractères"
+      }
+    }
+  }
+}

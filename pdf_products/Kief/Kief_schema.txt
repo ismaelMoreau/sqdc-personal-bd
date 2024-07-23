@@ -1,0 +1,99 @@
+Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer une variété de détails sur les produits de cannabis, en mettant l'accent sur la richesse des données.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "produit": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "espece": {
+      "type": "string"
+    },
+    "texture": {
+      "type": "string"
+    },
+    "couleur": {
+      "type": "string"
+    },
+    "extraction": {
+      "type": "string",
+      "enum": ["sans solvant", "avec solvant"]
+    },
+    "genetique": {
+      "type": "string"
+    },
+    "effets_potentiels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "temps_appartion_effets": {
+      "type": "string",
+      "pattern": "^[0-9]+\\s*(secondes|minutes)$"
+    },
+    "cultive_au_quebec": {
+      "type": "boolean"
+    },
+    "fournisseur": {
+      "type": "string"
+    },
+    "aromes_naturels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "terpenes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "instructions_utilisation": {
+      "type": "string"
+    },
+    "effets_indesirables": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "produit",
+    "format",
+    "espece",
+    "texture",
+    "couleur",
+    "extraction",
+    "effets_potentiels",
+    "temps_appartion_effets",
+    "cultive_au_quebec"
+  ]
+}
+```
+
+### Explication des champs :
+
+- **produit** : Nom du produit.
+- **format** : Quantité ou format du produit (ex. 1g, 3g).
+- **espece** : Type de cannabis (ex. Sativa, Indica, Hybride).
+- **texture** : Description de la texture du produit.
+- **couleur** : Couleur du produit.
+- **extraction** : Méthode d'extraction utilisée (sans solvant ou avec solvant).
+- **genetique** : Informations sur la génétique de la variété.
+- **effets_potentiels** : Liste des effets potentiels du produit.
+- **temps_appartion_effets** : Temps nécessaire pour que les effets apparaissent.
+- **cultive_au_quebec** : Indique si le produit est cultivé au Québec.
+- **fournisseur** : Nom du fournisseur ou de la marque.
+- **aromes_naturels** : Liste des arômes naturels présents dans le produit.
+- **terpenes** : Liste des terpènes présents dans le produit.
+- **instructions_utilisation** : Méthode d'utilisation recommandée.
+- **effets_indesirables** : Liste des effets indésirables potentiels.
+
+Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sur les produits de cannabis sont correctement enregistrées.

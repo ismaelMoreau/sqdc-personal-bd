@@ -1,0 +1,94 @@
+Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits à base de cannabis, en mettant l'accent sur la richesse des données.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "produit": {
+      "type": "string"
+    },
+    "marque": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mode_de_consommation": {
+      "type": "string"
+    },
+    "caracteristiques": {
+      "type": "object",
+      "properties": {
+        "sans_thc": {
+          "type": "boolean"
+        },
+        "vegan": {
+          "type": "boolean"
+        },
+        "non_allergene": {
+          "type": "boolean"
+        },
+        "sans_gluten": {
+          "type": "boolean"
+        },
+        "sans_graisse": {
+          "type": "boolean"
+        }
+      }
+    },
+    "effets_potentiels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "temps_apparition_effets": {
+      "type": "string"
+    },
+    "avertissement": {
+      "type": "string"
+    },
+    "emballage": {
+      "type": "string"
+    },
+    "origine": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "produit",
+    "marque",
+    "format",
+    "ingredients",
+    "mode_de_consommation",
+    "caracteristiques",
+    "effets_potentiels",
+    "temps_apparition_effets",
+    "avertissement",
+    "emballage",
+    "origine"
+  ]
+}
+```
+
+### Explication des champs :
+
+- **produit** : Nom du produit (ex. "Poudre hydrosoluble avec CBD").
+- **marque** : Marque du produit (ex. "CXPro").
+- **format** : Format de l'emballage (ex. "3 unités").
+- **ingredients** : Liste des ingrédients contenus dans le produit.
+- **mode_de_consommation** : Comment le produit doit être consommé (ex. "À dissoudre dans un liquide").
+- **caracteristiques** : Détails sur les caractéristiques du produit (sans THC, vegan, etc.).
+- **effets_potentiels** : Liste des effets potentiels du produit (ex. "Créativité, détente").
+- **temps_apparition_effets** : Temps nécessaire pour ressentir les effets (ex. "Jusqu'à 60 minutes").
+- **avertissement** : Avertissements concernant la consommation du produit.
+- **emballage** : Informations sur l'emballage (ex. "Emballage de 3 unités").
+- **origine** : Origine du produit (ex. "Produit québécois"). 
+
+Ce schéma peut être utilisé pour structurer les données dans une base de données MongoDB, facilitant ainsi la gestion et la recherche d'informations sur les produits à base de cannabis.

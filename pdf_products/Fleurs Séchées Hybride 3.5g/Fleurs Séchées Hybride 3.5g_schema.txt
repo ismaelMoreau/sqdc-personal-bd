@@ -1,0 +1,102 @@
+Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer une variété de détails sur différents types de cannabis.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "nom": {
+      "type": "string"
+    },
+    "genetique": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["Indica", "Sativa", "Hybride"]
+    },
+    "poids": {
+      "type": "number",
+      "minimum": 0
+    },
+    "thc": {
+      "type": "object",
+      "properties": {
+        "pourcentage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "type": {
+          "type": "string",
+          "enum": ["THC", "CBD"]
+        }
+      },
+      "required": ["pourcentage", "type"]
+    },
+    "aromes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "terpenes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "effets_potentiels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "origine": {
+      "type": "object",
+      "properties": {
+        "cultivateur": {
+          "type": "string"
+        },
+        "lieu": {
+          "type": "string"
+        },
+        "methode_culture": {
+          "type": "string"
+        }
+      },
+      "required": ["cultivateur", "lieu", "methode_culture"]
+    },
+    "affinage": {
+      "type": "object",
+      "properties": {
+        "periode": {
+          "type": "number"
+        },
+        "methode": {
+          "type": "string"
+        }
+      },
+      "required": ["periode", "methode"]
+    },
+    "apparition_effets": {
+      "type": "string"
+    }
+  },
+  "required": ["nom", "genetique", "type", "poids", "thc", "aromes", "terpenes", "effets_potentiels", "origine", "affinage", "apparition_effets"]
+}
+```
+
+### Explication des champs :
+- **nom** : Nom du produit.
+- **genetique** : Génétique ou croisement spécifique.
+- **type** : Classification du cannabis (Indica, Sativa, Hybride).
+- **poids** : Poids du produit en grammes.
+- **thc** : Détails sur le pourcentage de THC ou CBD.
+- **aromes** : Liste des arômes associés au produit.
+- **terpenes** : Liste des terpènes présents.
+- **effets_potentiels** : Effets ressentis par les utilisateurs.
+- **origine** : Informations sur le cultivateur, le lieu et la méthode de culture.
+- **affinage** : Détails sur la période et la méthode d'affinage.
+- **apparition_effets** : Temps nécessaire pour ressentir les effets après consommation.
+
+Ce schéma permet de structurer les données de manière riche et détaillée, facilitant ainsi la gestion et l'analyse des informations sur les produits de cannabis.

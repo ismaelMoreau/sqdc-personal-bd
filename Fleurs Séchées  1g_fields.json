@@ -1,0 +1,30 @@
+{
+  "product": {
+    "name": "string",
+    "strain": "string",
+    "genetics": "string",
+    "dominance": "string",
+    "format": {
+      "weight": "float",
+      "humidity_pack_included": "boolean"
+    },
+    "cultivation": {
+      "micro_producer": "string",
+      "location": "string",
+      "method": "string"
+    },
+    "plant_part_used": "string",
+    "curing_process": {
+      "duration": "string",
+      "method": "string"
+    },
+    "effects": {
+      "onset_time": "string",
+      "description": [
+        "string"
+      ]
+    },
+    "flower_color": "string",
+    "warnings": "string"
+  }
+}

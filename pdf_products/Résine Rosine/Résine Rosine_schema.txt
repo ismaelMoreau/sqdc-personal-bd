@@ -1,0 +1,75 @@
+Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits de cannabis, en mettant l'accent sur la richesse des données.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "produit": {
+      "type": "string"
+    },
+    "marque": {
+      "type": "string"
+    },
+    "poids": {
+      "type": "number",
+      "minimum": 1
+    },
+    "type_de_concentre": {
+      "type": "string",
+      "enum": ["Rosin", "Résine Fraîche", "Concentré"]
+    },
+    "caracteristiques": {
+      "type": "object",
+      "properties": {
+        "genetique": {
+          "type": "string"
+        },
+        "couleur": {
+          "type": "string"
+        },
+        "texture": {
+          "type": "string"
+        },
+        "methode_extraction": {
+          "type": "string"
+        }
+      },
+      "required": ["genetique", "couleur", "texture", "methode_extraction"]
+    },
+    "effets_potentiels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "delai_appartion_effets": {
+      "type": "string"
+    },
+    "culture": {
+      "type": "string"
+    },
+    "emballage": {
+      "type": "string"
+    }
+  },
+  "required": ["produit", "marque", "poids", "type_de_concentre", "caracteristiques", "effets_potentiels", "delai_appartion_effets"]
+}
+```
+
+### Explication des champs :
+
+- **produit** : Nom du produit (ex. "Rosin 30").
+- **marque** : Nom de la marque (ex. "EXKA").
+- **poids** : Poids du produit en grammes.
+- **type_de_concentre** : Type de concentré (ex. "Rosin", "Résine Fraîche").
+- **caracteristiques** : Détails sur le produit, incluant :
+  - **genetique** : Variété ou génétique du produit.
+  - **couleur** : Couleur du produit.
+  - **texture** : Texture du produit.
+  - **methode_extraction** : Méthode utilisée pour l'extraction.
+- **effets_potentiels** : Liste des effets potentiels du produit.
+- **delai_appartion_effets** : Délai d'apparition des effets après consommation.
+- **culture** : Informations sur la culture (ex. "Culture en intérieur").
+- **emballage** : Détails sur l'emballage du produit.
+
+Ce schéma permet de structurer les données de manière à ce qu'elles soient facilement accessibles et compréhensibles.

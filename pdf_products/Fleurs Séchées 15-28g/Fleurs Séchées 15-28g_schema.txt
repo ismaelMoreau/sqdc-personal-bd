@@ -1,0 +1,80 @@
+Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer une variété de données sur différents produits de cannabis.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "produit": {
+      "type": "string"
+    },
+    "marque": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string",
+      "enum": ["15g", "28g"]
+    },
+    "genetique": {
+      "type": "string"
+    },
+    "variete": {
+      "type": "string"
+    },
+    "dominance": {
+      "type": "string",
+      "enum": ["Sativa", "Indica", "Hybride"]
+    },
+    "lieu_de_culture": {
+      "type": "string"
+    },
+    "methode_de_culture": {
+      "type": "string"
+    },
+    "effets_potentiels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "temps_apparition_effets": {
+      "type": "string"
+    },
+    "sachet_humidite": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "produit",
+    "marque",
+    "format",
+    "genetique",
+    "variete",
+    "dominance",
+    "lieu_de_culture",
+    "methode_de_culture",
+    "effets_potentiels",
+    "temps_apparition_effets",
+    "sachet_humidite"
+  ]
+}
+```
+
+### Explication des champs :
+
+- **produit** : Nom du produit (ex. "Jacques Haze Ultra").
+- **marque** : Marque du produit (ex. "Maitri").
+- **format** : Format du produit (ex. "15g", "28g").
+- **genetique** : Lignée génétique (ex. "Ultra Sour x Jack Haze").
+- **variete** : Variété spécifique (ex. "Ultra Jack").
+- **dominance** : Type de dominance (Sativa, Indica, Hybride).
+- **lieu_de_culture** : Localisation de la culture (ex. "Mirabel, QC").
+- **methode_de_culture** : Méthode utilisée pour la culture (ex. "Culture Hydroponique").
+- **effets_potentiels** : Liste des effets potentiels (ex. ["Énergie", "Euphorie"]).
+- **temps_apparition_effets** : Délai d'apparition des effets (ex. "90 secondes à 5 minutes").
+- **sachet_humidite** : Indique si un sachet d'humidité est inclus (true/false).
+- **description** : Description générale du produit.
+
+Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sur les produits de cannabis sont correctement structurées.

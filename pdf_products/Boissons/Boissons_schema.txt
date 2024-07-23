@@ -1,0 +1,85 @@
+Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des boissons infusées au cannabis.
+
+```json
+{
+  "type": "object",
+  "properties": {
+    "nom": {
+      "type": "string"
+    },
+    "marque": {
+      "type": "string"
+    },
+    "type_boisson": {
+      "type": "string",
+      "enum": ["boisson pétillante", "tonique", "autre"]
+    },
+    "volume_ml": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "thc_mg": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "cbd_mg": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "saveur": {
+      "type": "string"
+    },
+    "effets_potentiels": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "methode_integration": {
+      "type": "string",
+      "enum": ["micro émulsion", "émulsion", "autre"]
+    },
+    "temps_apparition_effets": {
+      "type": "string"
+    },
+    "calories": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "nom",
+    "marque",
+    "type_boisson",
+    "volume_ml",
+    "thc_mg",
+    "saveur",
+    "effets_potentiels",
+    "methode_integration",
+    "temps_apparition_effets"
+  ]
+}
+```
+
+### Explication des champs :
+
+- **nom** : Le nom de la boisson.
+- **marque** : La marque qui produit la boisson.
+- **type_boisson** : Le type de boisson (ex. : boisson pétillante).
+- **volume_ml** : Le volume de la boisson en millilitres.
+- **thc_mg** : La quantité de THC en milligrammes.
+- **cbd_mg** : La quantité de CBD en milligrammes (si applicable).
+- **saveur** : La saveur de la boisson.
+- **effets_potentiels** : Une liste des effets potentiels de la boisson.
+- **methode_integration** : La méthode d'intégration du cannabinoïde.
+- **temps_apparition_effets** : Le temps nécessaire pour que les effets se manifestent.
+- **calories** : Le nombre de calories par portion.
+- **ingredients** : Une liste des ingrédients contenus dans la boisson.
+
+Ce schéma permet de structurer les données de manière à ce qu'elles soient facilement accessibles et compréhensibles.
