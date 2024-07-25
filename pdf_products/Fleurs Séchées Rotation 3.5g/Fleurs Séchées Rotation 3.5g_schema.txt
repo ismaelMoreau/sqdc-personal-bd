@@ -1,63 +1,75 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits de cannabis, en mettant l'accent sur la richesse des données.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Ce schéma utilise uniquement des types 'string' pour les champs, en mettant l'accent sur la richesse des données.
 
 ```json
 {
   "type": "object",
   "properties": {
-    "produit": {
-      "type": "object",
-      "properties": {
-        "nom": { "type": "string" },
-        "marque": { "type": "string" },
-        "espece": { "type": "string", "enum": ["Indica", "Sativa", "Hybride", "Hybride Sativa"] },
-        "format": { "type": "string", "pattern": "^3.5g$" },
-        "souche": { "type": "string" },
-        "genetique": { "type": "string" },
-        "couleur": { "type": "string" },
-        "effets_potentiels": { "type": "array", "items": { "type": "string" } },
-        "delai_effets": { "type": "string", "pattern": "^90 secondes à 5 minutes$" },
-        "partie_plante": { "type": "string" },
-        "lieu_culture": { "type": "string" },
-        "methode_culture": { "type": "string" },
-        "affinage": { "type": "string" },
-        "humidite": { "type": "string" },
-        "cultive_quebec": { "type": "boolean" },
-        "message_avertissement": { "type": "string" }
-      },
-      "required": [
-        "nom",
-        "marque",
-        "espece",
-        "format",
-        "souche",
-        "effets_potentiels",
-        "delai_effets",
-        "lieu_culture",
-        "methode_culture",
-        "cultive_quebec"
-      ]
+    "nom_du_produit": {
+      "type": "string"
+    },
+    "espece": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "variete": {
+      "type": "string"
+    },
+    "lieu_de_culture": {
+      "type": "string"
+    },
+    "methode_de_culture": {
+      "type": "string"
+    },
+    "partie_du_plante_utilisee": {
+      "type": "string"
+    },
+    "cultive_quebec": {
+      "type": "string"
+    },
+    "sachet_humidite": {
+      "type": "string"
+    },
+    "effets_potentiels": {
+      "type": "string"
+    },
+    "temps_apparition_effets": {
+      "type": "string"
+    },
+    "message_avertissement": {
+      "type": "string"
     }
   },
-  "required": ["produit"]
+  "required": [
+    "nom_du_produit",
+    "espece",
+    "format",
+    "variete",
+    "lieu_de_culture",
+    "methode_de_culture",
+    "partie_du_plante_utilisee",
+    "cultive_quebec",
+    "sachet_humidite",
+    "effets_potentiels",
+    "temps_apparition_effets",
+    "message_avertissement"
+  ]
 }
 ```
 
 ### Explication des champs :
-- **nom** : Nom du produit.
-- **marque** : Marque du produit.
-- **espece** : Type de cannabis (Indica, Sativa, Hybride).
-- **format** : Poids du produit (3.5g).
-- **souche** : Souche ou variété du produit.
-- **genetique** : Informations sur la génétique (si applicable).
-- **couleur** : Couleur de la fleur.
-- **effets_potentiels** : Liste des effets potentiels.
-- **delai_effets** : Délai d'apparition des effets.
-- **partie_plante** : Partie de la plante utilisée.
-- **lieu_culture** : Lieu où le produit a été cultivé.
-- **methode_culture** : Méthode de culture utilisée.
-- **affinage** : Détails sur le processus d'affinage.
-- **humidite** : Informations sur le contrôle de l'humidité.
+- **nom_du_produit** : Le nom du produit de cannabis.
+- **espece** : Type de cannabis (hybride, indica, sativa).
+- **format** : Poids du produit (ex. 3.5g).
+- **variete** : Variété spécifique du produit.
+- **lieu_de_culture** : Localisation où le cannabis a été cultivé.
+- **methode_de_culture** : Méthode utilisée pour cultiver le cannabis (ex. intérieur, extérieur).
+- **partie_du_plante_utilisee** : Partie de la plante utilisée pour le produit.
 - **cultive_quebec** : Indique si le produit est cultivé au Québec.
-- **message_avertissement** : Avertissements concernant la consommation.
+- **sachet_humidite** : Type de sachet d'humidité utilisé.
+- **effets_potentiels** : Effets que le produit peut avoir sur l'utilisateur.
+- **temps_apparition_effets** : Délai avant que les effets ne se manifestent.
+- **message_avertissement** : Avertissements concernant la consommation du produit.
 
-Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sont capturées de manière structurée.
+Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sont présentes et correctement formatées.

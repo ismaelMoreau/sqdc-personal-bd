@@ -1,4 +1,4 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits de cannabis, en mettant l'accent sur la richesse des données.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Tous les types de données sont définis comme des chaînes de caractères (`string`).
 
 ```json
 {
@@ -7,69 +7,61 @@ Voici un schéma de validation MongoDB basé sur les informations extraites des 
     "produit": {
       "type": "string"
     },
-    "marque": {
+    "quantite": {
       "type": "string"
     },
-    "poids": {
-      "type": "number",
-      "minimum": 1
+    "espece": {
+      "type": "string"
     },
-    "type_de_concentre": {
-      "type": "string",
-      "enum": ["Rosin", "Résine Fraîche", "Concentré"]
+    "couleur": {
+      "type": "string"
     },
-    "caracteristiques": {
-      "type": "object",
-      "properties": {
-        "genetique": {
-          "type": "string"
-        },
-        "couleur": {
-          "type": "string"
-        },
-        "texture": {
-          "type": "string"
-        },
-        "methode_extraction": {
-          "type": "string"
-        }
-      },
-      "required": ["genetique", "couleur", "texture", "methode_extraction"]
+    "texture": {
+      "type": "string"
     },
-    "effets_potentiels": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+    "methode_extraction": {
+      "type": "string"
     },
-    "delai_appartion_effets": {
+    "genetique": {
       "type": "string"
     },
     "culture": {
       "type": "string"
     },
-    "emballage": {
+    "effets_potentiels": {
+      "type": "string"
+    },
+    "delai_appartion_effets": {
+      "type": "string"
+    },
+    "description": {
       "type": "string"
     }
   },
-  "required": ["produit", "marque", "poids", "type_de_concentre", "caracteristiques", "effets_potentiels", "delai_appartion_effets"]
+  "required": [
+    "produit",
+    "quantite",
+    "espece",
+    "couleur",
+    "texture",
+    "methode_extraction",
+    "effets_potentiels",
+    "delai_appartion_effets"
+  ]
 }
 ```
 
 ### Explication des champs :
+- **produit** : Nom du produit (ex. "Rosin 30", "G Mint", "Dabs de luxe").
+- **quantite** : Quantité du produit (ex. "1 g").
+- **espece** : Type de cannabis (ex. "Mélange", "Indica").
+- **couleur** : Couleur du produit (ex. "Jaune Pâle Translucide", "Dorée").
+- **texture** : Description de la texture (ex. "Rosin Budder", "Texture visqueuse").
+- **methode_extraction** : Méthode utilisée pour l'extraction (ex. "BHO", "Extraction mécanique").
+- **genetique** : Variété génétique (ex. "It's It x Cookies & Cream").
+- **culture** : Informations sur la culture (ex. "Fabriqué au Québec").
+- **effets_potentiels** : Effets possibles du produit (ex. "Rire, Appétit, Calme").
+- **delai_appartion_effets** : Délai d'apparition des effets (ex. "90 secondes à 5 minutes après inhalation").
+- **description** : Description générale du produit (facultatif).
 
-- **produit** : Nom du produit (ex. "Rosin 30").
-- **marque** : Nom de la marque (ex. "EXKA").
-- **poids** : Poids du produit en grammes.
-- **type_de_concentre** : Type de concentré (ex. "Rosin", "Résine Fraîche").
-- **caracteristiques** : Détails sur le produit, incluant :
-  - **genetique** : Variété ou génétique du produit.
-  - **couleur** : Couleur du produit.
-  - **texture** : Texture du produit.
-  - **methode_extraction** : Méthode utilisée pour l'extraction.
-- **effets_potentiels** : Liste des effets potentiels du produit.
-- **delai_appartion_effets** : Délai d'apparition des effets après consommation.
-- **culture** : Informations sur la culture (ex. "Culture en intérieur").
-- **emballage** : Détails sur l'emballage du produit.
-
-Ce schéma permet de structurer les données de manière à ce qu'elles soient facilement accessibles et compréhensibles.
+Ce schéma permet de structurer les données tout en conservant une certaine flexibilité pour les différents produits.

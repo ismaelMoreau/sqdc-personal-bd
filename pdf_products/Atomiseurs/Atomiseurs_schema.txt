@@ -1,80 +1,92 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des atomiseurs de cannabis, en mettant l'accent sur la richesse des données.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Chaque produit est représenté par un document avec des champs pertinents, tous de type `string`.
 
 ```json
 {
   "type": "object",
   "properties": {
     "produit": {
-      "type": "string",
-      "description": "Nom du produit"
+      "type": "string"
     },
     "marque": {
-      "type": "string",
-      "description": "Marque du produit"
+      "type": "string"
     },
-    "format": {
-      "type": "number",
-      "description": "Volume net du produit en ml"
+    "volume": {
+      "type": "string"
+    },
+    "caracteristiques": {
+      "type": "string"
     },
     "ingredients": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "Liste des ingrédients"
+      "type": "string"
     },
     "extraction": {
-      "type": "string",
-      "description": "Méthode d'extraction utilisée"
+      "type": "string"
     },
-    "dosage": {
-      "type": "string",
-      "description": "Dosage recommandé par activation"
+    "utilisation": {
+      "type": "string"
     },
     "effets": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "Effets potentiels du produit"
-    },
-    "temps_apparition": {
-      "type": "string",
-      "description": "Temps d'apparition des effets"
-    },
-    "production": {
-      "type": "string",
-      "description": "Informations sur la production du produit"
+      "type": "string"
     },
     "mise_en_garde": {
-      "type": "string",
-      "description": "Mise en garde concernant l'utilisation"
+      "type": "string"
     }
   },
   "required": [
     "produit",
     "marque",
-    "format",
+    "volume",
+    "caracteristiques",
     "ingredients",
     "extraction",
-    "dosage",
-    "effets",
-    "temps_apparition"
+    "utilisation",
+    "effets"
   ]
 }
 ```
 
-### Explication des champs :
+### Exemples de documents
 
-- **produit** : Nom de l'atomiseur (ex. "CBD 2000").
-- **marque** : Marque ou entreprise qui produit l'atomiseur (ex. "EXKA").
-- **format** : Volume net du produit en millilitres (ex. 15 ml, 20 ml).
-- **ingredients** : Liste des ingrédients utilisés dans le produit (ex. "huile de coco", "extrait de cannabis").
-- **extraction** : Méthode d'extraction (ex. "éthanol cryogénique", "CO2").
-- **dosage** : Dosage recommandé par activation (ex. "0.1 ml par activation").
-- **effets** : Liste des effets potentiels (ex. "Relaxation", "Énergie").
-- **temps_apparition** : Temps nécessaire pour que les effets apparaissent (ex. "30 minutes").
-- **production** : Informations sur la production, comme le lieu et les méthodes.
-- **mise_en_garde** : Avertissements concernant l'utilisation du produit.
+1. **Produit 1**
+   ```json
+   {
+     "produit": "CBD 2000",
+     "marque": "EXKKA",
+     "volume": "15 mL",
+     "caracteristiques": "Huile à haute teneur de CBD",
+     "ingredients": "Huile de noix de coco",
+     "extraction": "Éthanol réfrigéré",
+     "utilisation": "150 doses de 0.1 ml par bouteille",
+     "effets": "Sensations de Relaxation, Calme et Détente"
+   }
+   ```
 
-Ce schéma peut être utilisé pour structurer les données dans une base de données MongoDB, facilitant ainsi la gestion et la recherche d'informations sur les atomiseurs de cannabis.
+2. **Produit 2**
+   ```json
+   {
+     "produit": "Big Bang",
+     "marque": "OLLOPA",
+     "volume": "15 mL",
+     "caracteristiques": "Triglycérides à chaîne moyenne, extrait d'huile de cannabis",
+     "ingredients": "Extrait d'huile de cannabis",
+     "extraction": "Éthanol cryogénique",
+     "utilisation": "Pourrait créer l'impression de ressentir des sensations stimulantes",
+     "effets": "Sentiment de joie, euphorie"
+   }
+   ```
+
+3. **Produit 3**
+   ```json
+   {
+     "produit": "Slingshot THC",
+     "marque": "BOON DOCKS",
+     "volume": "12 mL",
+     "caracteristiques": "Vaporisateur, ingérer par voie orale",
+     "ingredients": "Extrait de cannabis",
+     "extraction": "CO2",
+     "utilisation": "0.5 ml dose initiale",
+     "effets": "Vivification, Énergie"
+   }
+   ```
+
+Ce schéma permet de structurer les données de manière cohérente tout en conservant la richesse des informations.

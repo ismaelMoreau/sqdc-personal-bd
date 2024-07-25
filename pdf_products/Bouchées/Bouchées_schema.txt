@@ -1,4 +1,4 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer une variété de produits infusés au cannabis, en mettant l'accent sur les détails nutritionnels, les effets potentiels et d'autres caractéristiques pertinentes.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Chaque produit est représenté par un document avec des champs de type `string` pour capturer la richesse des données.
 
 ```json
 {
@@ -14,72 +14,21 @@ Voici un schéma de validation MongoDB basé sur les informations extraites des 
       "type": "string"
     },
     "ingredients": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "valeur_nutritive": {
-      "type": "object",
-      "properties": {
-        "calories": {
-          "type": "integer"
-        },
-        "lipides": {
-          "type": "number"
-        },
-        "glucides": {
-          "type": "number"
-        },
-        "proteines": {
-          "type": "number"
-        },
-        "fibres": {
-          "type": "number"
-        },
-        "sucres": {
-          "type": "number"
-        },
-        "sodium": {
-          "type": "number"
-        },
-        "potassium": {
-          "type": "number"
-        },
-        "calcium": {
-          "type": "number"
-        },
-        "fer": {
-          "type": "number"
-        }
-      },
-      "required": ["calories"]
-    },
-    "effets_potentiels": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "temps_appartion_effets": {
       "type": "string"
     },
-    "partenaire_production": {
+    "effets_potentiels": {
+      "type": "string"
+    },
+    "delai_appartion_effets": {
       "type": "string"
     },
     "texture": {
       "type": "string"
     },
-    "methode_integration": {
+    "partenaire_production": {
       "type": "string"
     },
-    "allergenes": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "avertissement": {
+    "avis": {
       "type": "string"
     }
   },
@@ -88,26 +37,86 @@ Voici un schéma de validation MongoDB basé sur les informations extraites des 
     "marque",
     "format",
     "ingredients",
-    "valeur_nutritive",
-    "effets_potentiels",
-    "temps_appartion_effets"
+    "effets_potentiels"
   ]
 }
 ```
 
-### Explication des champs :
+### Exemples de documents
 
-- **produit** : Nom du produit.
-- **marque** : Marque du produit.
-- **format** : Format de l'emballage (ex. : 355ml, 4 unités).
-- **ingredients** : Liste des ingrédients.
-- **valeur_nutritive** : Détails nutritionnels, incluant calories, lipides, glucides, etc.
-- **effets_potentiels** : Liste des effets potentiels du produit.
-- **temps_appartion_effets** : Délai d'apparition des effets après ingestion.
-- **partenaire_production** : Partenaire de production du produit.
-- **texture** : Texture du produit (ex. : malléable, croustillant).
-- **methode_integration** : Méthode d'intégration des cannabinoïdes.
-- **allergenes** : Liste des allergènes potentiels.
-- **avertissement** : Avertissements concernant la consommation du produit.
+1. **Mélange à sauce poutine infusé**
+   ```json
+   {
+     "produit": "Mélange à sauce poutine infusé",
+     "marque": "1964",
+     "format": "2 unités de 5 mg",
+     "ingredients": "Amidon de maïs, farine de blé, etc.",
+     "effets_potentiels": "calme, détente, bouche sèche, yeux rouges",
+     "delai_appartion_effets": "15 à 30 minutes ou plus",
+     "texture": "non spécifié",
+     "partenaire_production": "Rubicon Organics",
+     "avis": "non spécifié"
+   }
+   ```
 
-Ce schéma peut être utilisé pour structurer les données des produits infusés au cannabis dans une base de données MongoDB, facilitant ainsi la gestion et la recherche d'informations.
+2. **Figs Séchées Infusées**
+   ```json
+   {
+     "produit": "Figs Séchées Infusées",
+     "marque": "Rilaxe",
+     "format": "4 morceaux",
+     "ingredients": "Figs séchées biologiques, extrait de cannabis, huile TCM",
+     "effets_potentiels": "Détente, Appétit, Sommeil",
+     "delai_appartion_effets": "Jusqu'à 60 minutes après ingestion",
+     "texture": "Malléable",
+     "partenaire_production": "Apothicaire Botanique",
+     "avis": "non spécifié"
+   }
+   ```
+
+3. **Thé Baies Sauvages Hibiscus**
+   ```json
+   {
+     "produit": "Thé Baies Sauvages Hibiscus",
+     "marque": "Soleil",
+     "format": "355ml",
+     "ingredients": "non spécifié",
+     "effets_potentiels": "Calme, créativité, concentration",
+     "delai_appartion_effets": "Jusqu'à 60 minutes après ingestion",
+     "texture": "non spécifié",
+     "partenaire_production": "non spécifié",
+     "avis": "non spécifié"
+   }
+   ```
+
+4. **Pomme et Matcha**
+   ```json
+   {
+     "produit": "Pomme et matcha",
+     "marque": "blee",
+     "format": "2 unités",
+     "ingredients": "Pommes séchées, dattes, canneberges, etc.",
+     "effets_potentiels": "Stimulant, Euphorique, Énergisant",
+     "delai_appartion_effets": "Jusqu’à 60 minutes après ingestion",
+     "texture": "Malléable",
+     "partenaire_production": "Gayonica",
+     "avis": "non spécifié"
+   }
+   ```
+
+5. **Camerise**
+   ```json
+   {
+     "produit": "Camerise",
+     "marque": "Bonjour High",
+     "format": "355ml",
+     "ingredients": "Eau, Érythritol, arômes naturels, etc.",
+     "effets_potentiels": "Euphorie, Calme, Sociabilité",
+     "delai_appartion_effets": "non spécifié",
+     "texture": "non spécifié",
+     "partenaire_production": "Les Eaux Saint-Léger",
+     "avis": "non spécifié"
+   }
+   ```
+
+Ce schéma permet de structurer les données tout en conservant la richesse d'information des produits.

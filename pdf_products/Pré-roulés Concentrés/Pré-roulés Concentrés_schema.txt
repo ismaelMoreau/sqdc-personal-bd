@@ -1,4 +1,4 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits de cannabis, en mettant l'accent sur la richesse des données.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Tous les types de données sont définis comme des chaînes de caractères (`string`).
 
 ```json
 {
@@ -10,83 +10,63 @@ Voici un schéma de validation MongoDB basé sur les informations extraites des 
     "format": {
       "type": "string"
     },
-    "espèce": {
-      "type": "string",
-      "enum": ["Indica", "Sativa", "Hybride", "Mélange"]
-    },
-    "variété": {
+    "espece": {
       "type": "string"
     },
-    "génétique": {
+    "variete": {
+      "type": "string"
+    },
+    "genetique": {
       "type": "string"
     },
     "lieu_de_culture": {
       "type": "string"
     },
-    "méthode_de_culture": {
+    "methode_de_culture": {
       "type": "string"
     },
-    "méthode_d_extraction": {
+    "effets_potentiels": {
       "type": "string"
     },
-    "couleur_du_produit": {
-      "type": "string"
-    },
-    "texture": {
+    "temps_apparition_effets": {
       "type": "string"
     },
     "emballage": {
       "type": "string"
     },
-    "effets_potentiels": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "temps_d_appartion_effets": {
+    "partie_de_la_plante_utilisee": {
       "type": "string"
     },
-    "producteur": {
-      "type": "object",
-      "properties": {
-        "nom": {
-          "type": "string"
-        },
-        "adresse": {
-          "type": "string"
-        }
-      },
-      "required": ["nom"]
+    "methode_de_maturation": {
+      "type": "string"
     }
   },
   "required": [
     "produit",
     "format",
-    "espèce",
-    "variété",
+    "espece",
+    "variete",
+    "genetique",
     "lieu_de_culture",
-    "méthode_de_culture",
+    "methode_de_culture",
     "effets_potentiels",
-    "temps_d_appartion_effets"
+    "temps_apparition_effets"
   ]
 }
 ```
 
 ### Explication des champs :
 - **produit** : Nom du produit.
-- **format** : Détails sur le format (ex. : 3 x 0.5 g).
-- **espèce** : Type de cannabis (Indica, Sativa, Hybride, Mélange).
-- **variété** : Spécificité de la souche.
-- **génétique** : Parenté génétique de la souche.
-- **lieu_de_culture** : Localisation de la culture.
-- **méthode_de_culture** : Méthode utilisée pour cultiver le cannabis.
-- **méthode_d_extraction** : Technique d'extraction utilisée.
-- **couleur_du_produit** : Couleur du produit final.
-- **texture** : Texture du produit.
-- **emballage** : Informations sur l'emballage.
-- **effets_potentiels** : Liste des effets potentiels.
-- **temps_d_appartion_effets** : Délai d'apparition des effets après inhalation.
-- **producteur** : Informations sur le producteur, incluant le nom et l'adresse.
+- **format** : Détails sur le format (ex. : nombre de joints et poids).
+- **espece** : Type de plante (ex. : Indica, Sativa, Hybride).
+- **variete** : Variété spécifique du produit.
+- **genetique** : Informations sur la génétique de la variété.
+- **lieu_de_culture** : Localisation où le produit a été cultivé.
+- **methode_de_culture** : Méthode utilisée pour cultiver le produit.
+- **effets_potentiels** : Effets que le produit peut avoir sur l'utilisateur.
+- **temps_apparition_effets** : Délai avant que les effets ne se manifestent.
+- **emballage** : Informations sur l'emballage du produit.
+- **partie_de_la_plante_utilisee** : Partie de la plante utilisée pour le produit.
+- **methode_de_maturation** : Méthode de maturation du produit.
 
-Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sont capturées de manière structurée.
+Ce schéma permet de structurer les données de manière cohérente tout en conservant la richesse des informations.

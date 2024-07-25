@@ -1,87 +1,59 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer une variété de détails sur les produits de cannabis.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Ce schéma utilise uniquement des types 'string' pour les champs.
 
 ```json
 {
-  "type": "object",
+  "bsonType": "object",
+  "required": ["nom", "espece", "variété", "format", "lieu_de_culture", "effets", "méthode_de_culture"],
   "properties": {
-    "produit": {
-      "type": "string"
+    "nom": {
+      "bsonType": "string",
+      "description": "Nom du produit"
     },
     "espece": {
-      "type": "string",
-      "enum": ["Indica", "Sativa", "Hybride"]
+      "bsonType": "string",
+      "description": "Espèce de la plante (Indica, Sativa, etc.)"
     },
     "variété": {
-      "type": "string"
+      "bsonType": "string",
+      "description": "Variété spécifique de la plante"
     },
-    "génétique": {
-      "type": "string"
-    },
-    "poids": {
-      "type": "number",
-      "minimum": 0
+    "format": {
+      "bsonType": "string",
+      "description": "Format du produit (ex: 1g, 3.5g)"
     },
     "lieu_de_culture": {
-      "type": "string"
-    },
-    "méthode_de_culture": {
-      "type": "string",
-      "enum": ["Intérieur", "Extérieur", "Hydroponique"]
-    },
-    "processus_d_affinage": {
-      "type": "string"
-    },
-    "sachet_humidité": {
-      "type": "boolean"
-    },
-    "couleur_de_la_fleur": {
-      "type": "string"
+      "bsonType": "string",
+      "description": "Lieu où le produit a été cultivé"
     },
     "effets": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "bsonType": "string",
+      "description": "Effets potentiels du produit"
     },
-    "temps_apparition_effets": {
-      "type": "string"
+    "méthode_de_culture": {
+      "bsonType": "string",
+      "description": "Méthode utilisée pour cultiver le produit"
     },
-    "micro_producteur": {
-      "type": "string"
+    "processus_d_affinage": {
+      "bsonType": "string",
+      "description": "Processus d'affinage du produit"
     },
-    "message_avertissement": {
-      "type": "string"
+    "apparition_des_effets": {
+      "bsonType": "string",
+      "description": "Temps d'apparition des effets après inhalation"
     }
-  },
-  "required": [
-    "produit",
-    "espece",
-    "variété",
-    "poids",
-    "lieu_de_culture",
-    "méthode_de_culture",
-    "processus_d_affinage",
-    "effets",
-    "temps_apparition_effets"
-  ]
+  }
 }
 ```
 
 ### Explication des champs :
-
-- **produit** : Nom du produit.
-- **espece** : Type de cannabis (Indica, Sativa, Hybride).
-- **variété** : Nom spécifique de la variété.
-- **génétique** : Informations sur la génétique de la variété.
-- **poids** : Poids du produit en grammes.
-- **lieu_de_culture** : Localisation où le cannabis a été cultivé.
-- **méthode_de_culture** : Méthode utilisée pour cultiver le cannabis (intérieur, extérieur, hydroponique).
+- **nom** : Le nom du produit (ex: Pure Kush, GG, L'Bon voisin).
+- **espece** : Indique si la plante est Indica, Sativa, ou un mélange.
+- **variété** : La variété spécifique de la plante (ex: OG Kush, Alien Cookies).
+- **format** : Le poids du produit (ex: 1g, 3.5g).
+- **lieu_de_culture** : L'emplacement où le produit a été cultivé (ex: Québec).
+- **effets** : Les effets potentiels du produit (ex: Relaxant, Stimulant).
+- **méthode_de_culture** : La méthode utilisée pour cultiver (ex: Hydroponique, Culture extérieure).
 - **processus_d_affinage** : Détails sur le processus d'affinage.
-- **sachet_humidité** : Indique si un sachet d'humidité est inclus.
-- **couleur_de_la_fleur** : Description de la couleur de la fleur.
-- **effets** : Liste des effets potentiels du produit.
-- **temps_apparition_effets** : Temps nécessaire pour que les effets se manifestent.
-- **micro_producteur** : Nom du micro-producteur.
-- **message_avertissement** : Avertissements concernant la consommation.
+- **apparition_des_effets** : Délai d'apparition des effets après consommation.
 
-Ce schéma permet de structurer les données de manière à ce qu'elles soient facilement accessibles et compréhensibles.
+Ce schéma permet de structurer les données tout en conservant une richesse d'informations.

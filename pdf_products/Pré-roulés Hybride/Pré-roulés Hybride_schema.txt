@@ -1,74 +1,83 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer une variété de détails sur les produits de cannabis préroulés.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Le schéma utilise uniquement des types 'string' pour maximiser la richesse des données.
 
 ```json
 {
   "type": "object",
   "properties": {
     "produit": {
-      "type": "object",
-      "properties": {
-        "marque": { "type": "string" },
-        "nom": { "type": "string" },
-        "espece": { "type": "string" },
-        "dominance": { "type": "string" },
-        "format": { "type": "string" },
-        "variété": { "type": "string" },
-        "genetique": { "type": "string" },
-        "description": { "type": "string" },
-        "couleur_de_cendre": { "type": "string" },
-        "type_de_mouture": { "type": "string" },
-        "sachet_humidite": { "type": "string" },
-        "type_de_papier": { "type": "string" },
-        "temps_apparition_effets": { "type": "string" },
-        "effets_potentiels": {
-          "type": "array",
-          "items": { "type": "string" }
-        }
-      },
-      "required": [
-        "marque",
-        "nom",
-        "espece",
-        "dominance",
-        "format",
-        "variété",
-        "genetique",
-        "description",
-        "couleur_de_cendre",
-        "type_de_mouture",
-        "sachet_humidite",
-        "type_de_papier",
-        "temps_apparition_effets",
-        "effets_potentiels"
-      ]
+      "type": "string"
     },
-    "culture": {
-      "type": "object",
-      "properties": {
-        "lieu_de_culture": { "type": "string" },
-        "methode_de_culture": { "type": "string" },
-        "methode_d_affinage": { "type": "string" },
-        "cultive_quebec": { "type": "boolean" }
-      },
-      "required": [
-        "lieu_de_culture",
-        "methode_de_culture",
-        "methode_d_affinage",
-        "cultive_quebec"
-      ]
+    "marque": {
+      "type": "string"
     },
-    "avertissement": { "type": "string" }
+    "variete": {
+      "type": "string"
+    },
+    "espece": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    },
+    "effets_potentiels": {
+      "type": "string"
+    },
+    "temps_apparition_effets": {
+      "type": "string"
+    },
+    "lieu_culture": {
+      "type": "string"
+    },
+    "methode_culture": {
+      "type": "string"
+    },
+    "type_de_mouture": {
+      "type": "string"
+    },
+    "sachet_humidite": {
+      "type": "string"
+    },
+    "type_de_papier": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "avertissement": {
+      "type": "string"
+    }
   },
-  "required": ["produit", "culture", "avertissement"]
+  "required": [
+    "produit",
+    "marque",
+    "variete",
+    "espece",
+    "format",
+    "effets_potentiels",
+    "temps_apparition_effets",
+    "lieu_culture",
+    "methode_culture",
+    "type_de_mouture",
+    "sachet_humidite",
+    "type_de_papier"
+  ]
 }
 ```
 
 ### Explication des champs :
+- **produit** : Nom du produit.
+- **marque** : Marque du produit.
+- **variete** : Variété de cannabis.
+- **espece** : Espèce et dominance (hybride, sativa, indica).
+- **format** : Format de l'emballage (ex. 5x0.5g).
+- **effets_potentiels** : Effets ressentis après consommation.
+- **temps_apparition_effets** : Temps nécessaire pour ressentir les effets.
+- **lieu_culture** : Lieu où le cannabis a été cultivé.
+- **methode_culture** : Méthode de culture utilisée.
+- **type_de_mouture** : Type de mouture du cannabis.
+- **sachet_humidite** : Informations sur l'humidité.
+- **type_de_papier** : Type de papier utilisé pour les préroulés.
+- **description** : Description générale du produit.
+- **avertissement** : Avertissements liés à la consommation.
 
-- **produit** : Contient des informations détaillées sur le produit, y compris la marque, le nom, l'espèce, la dominance, le format, la variété, la génétique, la description, la couleur de la cendre, le type de mouture, le sachet d'humidité, le type de papier, le temps d'apparition des effets et les effets potentiels.
-  
-- **culture** : Détails sur le lieu et la méthode de culture, ainsi que la méthode d'affinage et si le produit est cultivé au Québec.
-
-- **avertissement** : Un message d'avertissement concernant la consommation du produit.
-
-Ce schéma permet de structurer les données de manière à ce qu'elles soient facilement accessibles et compréhensibles pour des applications utilisant MongoDB.
+Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sont présentes et correctement formatées.

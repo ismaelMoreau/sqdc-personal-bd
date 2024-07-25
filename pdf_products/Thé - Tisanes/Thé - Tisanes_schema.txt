@@ -1,120 +1,82 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits de thé et d'infusion, en mettant l'accent sur la richesse des données.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Ce schéma utilise uniquement des types 'string' pour les champs.
 
 ```json
 {
   "type": "object",
   "properties": {
-    "produits": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "marque": {
-            "type": "string"
-          },
-          "nom_du_produit": {
-            "type": "string"
-          },
-          "format": {
-            "type": "string"
-          },
-          "saveurs": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "utilisation_et_effets": {
-            "type": "object",
-            "properties": {
-              "methode_de_consommation": {
-                "type": "string"
-              },
-              "effets_potentiels": {
-                "type": "string"
-              },
-              "temps_dapparition_des_effets": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "methode_de_consommation",
-              "effets_potentiels",
-              "temps_dapparition_des_effets"
-            ]
-          },
-          "culture_et_production": {
-            "type": "object",
-            "properties": {
-              "methode_dintegration_du_cannabinoide": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "methode_dintegration_du_cannabinoide"
-            ]
-          },
-          "message_davertissement": {
-            "type": "string"
-          },
-          "ingredients": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "nutrition_facts": {
-            "type": "object",
-            "properties": {
-              "calories": {
-                "type": "integer"
-              },
-              "lipides": {
-                "type": "number"
-              },
-              "sucres": {
-                "type": "number"
-              },
-              "fibres": {
-                "type": "number"
-              },
-              "proteines": {
-                "type": "number"
-              },
-              "sodium": {
-                "type": "number"
-              }
-            }
-          }
+    "produit": {
+      "type": "object",
+      "properties": {
+        "marque": {
+          "type": "string"
         },
-        "required": [
-          "marque",
-          "nom_du_produit",
-          "format",
-          "saveurs",
-          "utilisation_et_effets",
-          "culture_et_production",
-          "message_davertissement",
-          "ingredients",
-          "nutrition_facts"
-        ]
-      }
+        "nom": {
+          "type": "string"
+        },
+        "format": {
+          "type": "string"
+        },
+        "saveurs": {
+          "type": "string"
+        },
+        "utilisation": {
+          "type": "object",
+          "properties": {
+            "methode_consommation": {
+              "type": "string"
+            },
+            "effets_potentiels": {
+              "type": "string"
+            },
+            "temps_effets": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "methode_consommation",
+            "effets_potentiels",
+            "temps_effets"
+          ]
+        },
+        "culture_production": {
+          "type": "object",
+          "properties": {
+            "methode_integration": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "methode_integration"
+          ]
+        },
+        "message_avertissement": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "marque",
+        "nom",
+        "format",
+        "saveurs",
+        "utilisation",
+        "culture_production",
+        "message_avertissement"
+      ]
     }
   },
-  "required": ["produits"]
+  "required": [
+    "produit"
+  ]
 }
 ```
 
 ### Explication des champs :
-- **produits** : Un tableau d'objets représentant chaque produit.
-- **marque** : La marque du produit.
-- **nom_du_produit** : Le nom spécifique du produit.
-- **format** : Le format de l'emballage (ex. : nombre d'unités et poids).
-- **saveurs** : Un tableau des saveurs présentes dans le produit.
-- **utilisation_et_effets** : Un objet contenant des informations sur la méthode de consommation, les effets potentiels et le temps d'apparition des effets.
-- **culture_et_production** : Un objet décrivant la méthode d'intégration des cannabinoïdes.
-- **message_davertissement** : Un message de sécurité concernant l'utilisation du produit.
-- **ingredients** : Un tableau des ingrédients contenus dans le produit.
-- **nutrition_facts** : Un objet contenant des informations nutritionnelles, comme les calories et les macronutriments.
+- **marque** : Nom de la marque du produit.
+- **nom** : Nom du produit.
+- **format** : Détails sur le format du produit (ex. : nombre d'unités et poids).
+- **saveurs** : Saveurs présentes dans le produit.
+- **utilisation** : Détails sur la méthode de consommation, les effets potentiels et le temps d'apparition des effets.
+- **culture_production** : Méthode d'intégration du cannabinoïde.
+- **message_avertissement** : Avertissement concernant la consommation du produit.
 
-Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sont correctement structurées.
+Ce schéma permet de structurer les données tout en conservant une richesse d'informations.

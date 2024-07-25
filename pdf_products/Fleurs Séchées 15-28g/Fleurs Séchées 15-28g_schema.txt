@@ -1,80 +1,49 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer une variété de données sur différents produits de cannabis.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Tous les types de données sont définis comme des chaînes de caractères (`string`).
 
 ```json
 {
   "type": "object",
   "properties": {
-    "produit": {
-      "type": "string"
-    },
-    "marque": {
-      "type": "string"
-    },
-    "format": {
-      "type": "string",
-      "enum": ["15g", "28g"]
-    },
-    "genetique": {
-      "type": "string"
-    },
-    "variete": {
-      "type": "string"
-    },
-    "dominance": {
-      "type": "string",
-      "enum": ["Sativa", "Indica", "Hybride"]
-    },
-    "lieu_de_culture": {
-      "type": "string"
-    },
-    "methode_de_culture": {
-      "type": "string"
-    },
-    "effets_potentiels": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "temps_apparition_effets": {
-      "type": "string"
-    },
-    "sachet_humidite": {
-      "type": "boolean"
-    },
-    "description": {
-      "type": "string"
-    }
+    "marque": { "type": "string" },
+    "nom_du_produit": { "type": "string" },
+    "espece_et_dominance": { "type": "string" },
+    "format": { "type": "string" },
+    "variete": { "type": "string" },
+    "genetique": { "type": "string" },
+    "couleur_fleur": { "type": "string" },
+    "effets_potentiels": { "type": "string" },
+    "temps_appartion_effets": { "type": "string" },
+    "lieu_de_culture": { "type": "string" },
+    "methode_de_culture": { "type": "string" },
+    "sachet_humidite": { "type": "string" },
+    "message_avertissement": { "type": "string" }
   },
   "required": [
-    "produit",
     "marque",
+    "nom_du_produit",
+    "espece_et_dominance",
     "format",
-    "genetique",
     "variete",
-    "dominance",
-    "lieu_de_culture",
-    "methode_de_culture",
+    "genetique",
     "effets_potentiels",
-    "temps_apparition_effets",
-    "sachet_humidite"
+    "temps_appartion_effets"
   ]
 }
 ```
 
 ### Explication des champs :
+- **marque** : La marque du produit.
+- **nom_du_produit** : Le nom du produit.
+- **espece_et_dominance** : Type de cannabis et sa dominance (sativa, indica, hybride).
+- **format** : Le format du produit (ex. 28g, 15g).
+- **variete** : La variété spécifique du cannabis.
+- **genetique** : La génétique du produit.
+- **couleur_fleur** : Description de la couleur des fleurs.
+- **effets_potentiels** : Les effets potentiels du produit.
+- **temps_appartion_effets** : Temps d'apparition des effets après inhalation.
+- **lieu_de_culture** : Lieu où le cannabis a été cultivé.
+- **methode_de_culture** : Méthode utilisée pour cultiver le cannabis.
+- **sachet_humidite** : Information sur la présence d'un sachet d'humidité.
+- **message_avertissement** : Avertissements concernant la consommation.
 
-- **produit** : Nom du produit (ex. "Jacques Haze Ultra").
-- **marque** : Marque du produit (ex. "Maitri").
-- **format** : Format du produit (ex. "15g", "28g").
-- **genetique** : Lignée génétique (ex. "Ultra Sour x Jack Haze").
-- **variete** : Variété spécifique (ex. "Ultra Jack").
-- **dominance** : Type de dominance (Sativa, Indica, Hybride).
-- **lieu_de_culture** : Localisation de la culture (ex. "Mirabel, QC").
-- **methode_de_culture** : Méthode utilisée pour la culture (ex. "Culture Hydroponique").
-- **effets_potentiels** : Liste des effets potentiels (ex. ["Énergie", "Euphorie"]).
-- **temps_apparition_effets** : Délai d'apparition des effets (ex. "90 secondes à 5 minutes").
-- **sachet_humidite** : Indique si un sachet d'humidité est inclus (true/false).
-- **description** : Description générale du produit.
-
-Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sur les produits de cannabis sont correctement structurées.
+Ce schéma permet de structurer les données de manière cohérente tout en conservant la richesse des informations.

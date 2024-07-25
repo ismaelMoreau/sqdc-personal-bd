@@ -1,91 +1,52 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits de cannabis, en mettant l'accent sur la richesse des données.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies, en utilisant uniquement des types 'string' pour les champs :
 
 ```json
 {
-  "type": "object",
+  "bsonType": "object",
+  "required": ["nom_du_produit", "espèce", "format", "effets_potentiels", "apparition_des_effets", "lieu_de_culture", "méthode_de_culture", "variété", "couleurs_des_fleurs"],
   "properties": {
-    "produit": {
-      "type": "string"
-    },
-    "marque": {
-      "type": "string"
+    "nom_du_produit": {
+      "bsonType": "string",
+      "description": "Nom du produit"
     },
     "espèce": {
-      "type": "string",
-      "enum": ["Indica", "Sativa", "Hybride"]
+      "bsonType": "string",
+      "description": "Espèce de cannabis (Indica, Sativa, Hybride)"
     },
     "format": {
-      "type": "number",
-      "minimum": 0
+      "bsonType": "string",
+      "description": "Format du produit (ex: 3.5 g)"
     },
-    "génétique": {
-      "type": "string"
+    "effets_potentiels": {
+      "bsonType": "string",
+      "description": "Effets potentiels du produit"
     },
-    "culture": {
-      "type": "object",
-      "properties": {
-        "lieu": {
-          "type": "string"
-        },
-        "méthode": {
-          "type": "string",
-          "enum": ["Intérieure", "Extérieure", "Hydroponique"]
-        },
-        "partie": {
-          "type": "string"
-        },
-        "affinage": {
-          "type": "string"
-        }
-      },
-      "required": ["lieu", "méthode"]
+    "apparition_des_effets": {
+      "bsonType": "string",
+      "description": "Temps d'apparition des effets"
     },
-    "caractéristiques": {
-      "type": "object",
-      "properties": {
-        "couleur": {
-          "type": "string"
-        },
-        "pistils": {
-          "type": "string"
-        },
-        "sachet_humidité": {
-          "type": "boolean"
-        }
-      }
+    "lieu_de_culture": {
+      "bsonType": "string",
+      "description": "Lieu de culture du produit"
     },
-    "effets": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+    "méthode_de_culture": {
+      "bsonType": "string",
+      "description": "Méthode de culture utilisée"
     },
-    "temps_app": {
-      "type": "string"
+    "variété": {
+      "bsonType": "string",
+      "description": "Variété de cannabis"
+    },
+    "couleurs_des_fleurs": {
+      "bsonType": "string",
+      "description": "Variations de couleur des fleurs"
+    },
+    "sachet_humidité": {
+      "bsonType": "string",
+      "description": "Information sur le sachet d'humidité (si applicable)"
     }
-  },
-  "required": [
-    "produit",
-    "marque",
-    "espèce",
-    "format",
-    "culture",
-    "effets",
-    "temps_app"
-  ]
+  }
 }
 ```
 
-### Explication des champs :
-
-- **produit** : Nom du produit (ex. "Dough Lato").
-- **marque** : Marque du produit (ex. "Wôla!").
-- **espèce** : Type de cannabis (Indica, Sativa, Hybride).
-- **format** : Poids du produit en grammes (ex. 3.5).
-- **génétique** : Croisement ou variété (ex. "Dolato x Moonbow").
-- **culture** : Détails sur la culture, incluant le lieu, la méthode, la partie du plant utilisée, et le type d'affinage.
-- **caractéristiques** : Informations sur la couleur de la fleur, les pistils, et si un sachet d'humidité est inclus.
-- **effets** : Liste des effets potentiels (ex. "Relaxation", "Euphorie").
-- **temps_app** : Temps d'apparition des effets après inhalation (ex. "90 secondes à 5 minutes"). 
-
-Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sur les produits de cannabis sont correctement structurées.
+Ce schéma permet de capturer les informations essentielles sur chaque produit de cannabis, tout en respectant la contrainte d'utiliser uniquement des types 'string'.

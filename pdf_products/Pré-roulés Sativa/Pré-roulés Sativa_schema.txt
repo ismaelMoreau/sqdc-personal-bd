@@ -1,80 +1,58 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer une variété de détails sur les produits de cannabis, en mettant l'accent sur la richesse des données.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Chaque document représente un produit de cannabis avec des champs pertinents, tous de type 'string'.
 
 ```json
 {
   "type": "object",
   "properties": {
-    "produit": {
-      "type": "string"
-    },
-    "marque": {
-      "type": "string"
-    },
-    "dominance": {
-      "type": "string",
-      "enum": ["Sativa", "Indica", "Hybride"]
-    },
-    "terpenes": {
-      "type": "string",
-      "pattern": "^[0-9]+(\\.[0-9]+)?%-[0-9]+(\\.[0-9]+)?%$"
-    },
-    "culture": {
-      "type": "object",
-      "properties": {
-        "lieu": {
-          "type": "string"
-        },
-        "méthode": {
-          "type": "string"
-        },
-        "type_de_mouture": {
-          "type": "string"
-        },
-        "affinage": {
-          "type": "string"
-        }
-      },
-      "required": ["lieu", "méthode"]
-    },
-    "emballage": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        }
-      }
-    },
-    "effets": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "temps_apparition_effets": {
-      "type": "string",
-      "pattern": "^90 secondes à 5 minutes$"
-    },
-    "autres_informations": {
-      "type": "string"
-    }
+    "marque": { "type": "string" },
+    "nom_du_produit": { "type": "string" },
+    "espece": { "type": "string" },
+    "dominance": { "type": "string" },
+    "format": { "type": "string" },
+    "variete": { "type": "string" },
+    "genetique": { "type": "string" },
+    "lieu_de_culture": { "type": "string" },
+    "methode_de_culture": { "type": "string" },
+    "type_de_mouture": { "type": "string" },
+    "type_de_papier": { "type": "string" },
+    "effets_potentiels": { "type": "string" },
+    "temps_dapparition_des_effets": { "type": "string" },
+    "description": { "type": "string" },
+    "autres_informations": { "type": "string" }
   },
-  "required": ["produit", "marque", "dominance", "culture", "emballage", "effets", "temps_apparition_effets"]
+  "required": [
+    "marque",
+    "nom_du_produit",
+    "espece",
+    "dominance",
+    "format",
+    "variete",
+    "genetique",
+    "lieu_de_culture",
+    "methode_de_culture",
+    "type_de_mouture",
+    "type_de_papier",
+    "effets_potentiels",
+    "temps_dapparition_des_effets"
+  ]
 }
 ```
 
 ### Explication des champs :
-
-- **produit** : Nom du produit.
-- **marque** : Marque du produit.
-- **dominance** : Type de dominance (Sativa, Indica, Hybride).
-- **terpenes** : Plage de terpènes, formaté comme "1.5%-4.9%".
-- **culture** : Détails sur la culture, y compris le lieu, la méthode et le type de mouture.
-- **emballage** : Informations sur le type d'emballage et sa description.
-- **effets** : Liste des effets potentiels du produit.
-- **temps_apparition_effets** : Temps nécessaire pour ressentir les effets.
+- **marque** : Nom de la marque du produit.
+- **nom_du_produit** : Nom spécifique du produit.
+- **espece** : Type de cannabis (sativa, indica, hybride).
+- **dominance** : Dominance de la souche (sativa, indica).
+- **format** : Format de l'emballage (ex. : 5x0.5g).
+- **variete** : Variété spécifique du cannabis.
+- **genetique** : Informations sur la génétique de la souche.
+- **lieu_de_culture** : Localisation où le cannabis a été cultivé.
+- **methode_de_culture** : Méthode utilisée pour cultiver le cannabis.
+- **type_de_mouture** : Type de mouture du cannabis.
+- **type_de_papier** : Type de papier utilisé pour les préroulés.
+- **effets_potentiels** : Effets que le produit peut avoir sur l'utilisateur.
+- **temps_dapparition_des_effets** : Délai avant que les effets ne se manifestent.
+- **description** : Description générale du produit.
 - **autres_informations** : Informations supplémentaires pertinentes.
 
-Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sur les produits de cannabis sont correctement structurées et stockées.
+Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations nécessaires sont présentes et correctement formatées.

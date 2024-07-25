@@ -1,69 +1,55 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer une variété de détails sur les produits de cannabis préroulés.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Tous les types de données sont définis comme des chaînes de caractères (`string`).
 
 ```json
 {
   "type": "object",
   "properties": {
-    "produit": {
-      "type": "object",
-      "properties": {
-        "marque": { "type": "string" },
-        "nom": { "type": "string" },
-        "espèce": { "type": "string" },
-        "dominance": { "type": "string" },
-        "format": { "type": "string" },
-        "description": { "type": "string" },
-        "mélange": { "type": "string" },
-        "effets_potentiels": { "type": "array", "items": { "type": "string" } },
-        "temps_appartion_effets": { "type": "string" },
-        "type_de_papier": { "type": "string" },
-        "lieu_de_culture": { "type": "string" },
-        "méthode_de_culture": { "type": "string" },
-        "méthode_de_séchage": { "type": "string" },
-        "variété": { "type": "string" },
-        "génétique": { "type": "string" },
-        "terpènes": { "type": "string" },
-        "emballage_humidité": { "type": "boolean" },
-        "sachet_humidité": { "type": "boolean" },
-        "variations_couleur": { "type": "string" }
-      },
-      "required": [
-        "marque",
-        "nom",
-        "espèce",
-        "dominance",
-        "format",
-        "effets_potentiels",
-        "temps_appartion_effets",
-        "type_de_papier",
-        "lieu_de_culture",
-        "méthode_de_culture"
-      ]
-    }
+    "marque": { "type": "string" },
+    "nom_du_produit": { "type": "string" },
+    "espece": { "type": "string" },
+    "dominance": { "type": "string" },
+    "format": { "type": "string" },
+    "description": { "type": "string" },
+    "effets_potentiels": { "type": "string" },
+    "temps_appartion_effets": { "type": "string" },
+    "lieu_de_culture": { "type": "string" },
+    "methode_de_culture": { "type": "string" },
+    "type_de_papier": { "type": "string" },
+    "mouture": { "type": "string" },
+    "variations_couleur": { "type": "string" },
+    "affinage": { "type": "string" },
+    "emballage_humidite": { "type": "string" },
+    "sachet_humidite": { "type": "string" }
   },
-  "required": ["produit"]
+  "required": [
+    "marque",
+    "nom_du_produit",
+    "espece",
+    "dominance",
+    "format",
+    "effets_potentiels",
+    "temps_appartion_effets",
+    "lieu_de_culture"
+  ]
 }
 ```
 
 ### Explication des champs :
-- **marque** : Nom de la marque du produit.
-- **nom** : Nom spécifique du produit.
-- **espèce** : Type de cannabis (Indica, Sativa, Hybride).
-- **dominance** : Dominance génétique (ex. : Sativa, Indica).
-- **format** : Détails sur le format (ex. : 5 x 0.5 g).
-- **description** : Description du produit.
-- **mélange** : Type de mélange (ex. : Blend).
-- **effets_potentiels** : Liste des effets potentiels.
-- **temps_appartion_effets** : Délai d'apparition des effets.
-- **type_de_papier** : Type de papier utilisé pour les préroulés.
-- **lieu_de_culture** : Localisation de la culture.
-- **méthode_de_culture** : Méthode utilisée pour cultiver le cannabis.
-- **méthode_de_séchage** : Méthode de séchage du produit.
-- **variété** : Variété de cannabis.
-- **génétique** : Informations sur la génétique.
-- **terpènes** : Pourcentage de terpènes.
-- **emballage_humidité** : Indique si le produit est emballé avec un contrôle d'humidité.
-- **sachet_humidité** : Indique la présence d'un sachet d'humidité.
-- **variations_couleur** : Variations de couleur de la cendre ou du produit.
+- **marque** : La marque du produit.
+- **nom_du_produit** : Le nom spécifique du produit.
+- **espece** : L'espèce de cannabis (Indica, Sativa, Hybride).
+- **dominance** : La dominance de la variété (ex. : Sativa, Indica).
+- **format** : Le format du produit (ex. : 5 x 0.5g).
+- **description** : Une description du produit.
+- **effets_potentiels** : Les effets potentiels du produit.
+- **temps_appartion_effets** : Le temps d'apparition des effets après consommation.
+- **lieu_de_culture** : L'endroit où le produit a été cultivé.
+- **methode_de_culture** : La méthode utilisée pour cultiver le produit.
+- **type_de_papier** : Le type de papier utilisé pour les préroulés.
+- **mouture** : La façon dont le produit a été broyé.
+- **variations_couleur** : Les variations de couleur de la cendre ou du produit.
+- **affinage** : Détails sur le processus d'affinage.
+- **emballage_humidite** : Informations sur l'emballage en rapport avec l'humidité.
+- **sachet_humidite** : Informations sur la présence d'un sachet d'humidité.
 
-Ce schéma peut être ajusté en fonction des besoins spécifiques de votre application ou de votre base de données.
+Ce schéma peut être ajusté selon les besoins spécifiques de votre base de données.

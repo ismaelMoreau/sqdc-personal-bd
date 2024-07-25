@@ -1,102 +1,59 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits de cannabis moulus.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Tous les types de données sont définis comme des chaînes de caractères (`string`).
 
 ```json
 {
-  "type": "object",
+  "bsonType": "object",
+  "required": ["produit", "marque", "format", "genetique", "qualite", "emballage", "effets_potentiels", "temps_effets"],
   "properties": {
     "produit": {
-      "type": "string"
+      "bsonType": "string",
+      "description": "Nom du produit"
     },
     "marque": {
-      "type": "string"
+      "bsonType": "string",
+      "description": "Marque du produit"
     },
     "format": {
-      "type": "integer",
-      "minimum": 1
+      "bsonType": "string",
+      "description": "Format du produit (ex: 15g)"
     },
-    "espèce": {
-      "type": "string"
+    "genetique": {
+      "bsonType": "string",
+      "description": "Génétique du produit"
     },
-    "dominance": {
-      "type": "string"
-    },
-    "variété": {
-      "type": "string"
-    },
-    "génétique": {
-      "type": "string"
-    },
-    "lieu_de_culture": {
-      "type": "string"
-    },
-    "méthode_de_culture": {
-      "type": "string"
-    },
-    "type_de_mouture": {
-      "type": "string"
-    },
-    "cultivé_Québec": {
-      "type": "boolean"
-    },
-    "sachet_dhumidité": {
-      "type": "boolean"
-    },
-    "effets_potentiels": {
-      "type": "string"
-    },
-    "temps_appartion_effets": {
-      "type": "string"
-    },
-    "message_avertissement": {
-      "type": "string"
+    "qualite": {
+      "bsonType": "string",
+      "description": "Qualité du produit"
     },
     "emballage": {
-      "type": "string"
+      "bsonType": "string",
+      "description": "Type d'emballage"
     },
-    "qualité": {
-      "type": "string"
+    "effets_potentiels": {
+      "bsonType": "string",
+      "description": "Effets potentiels du produit"
     },
-    "terpène": {
-      "type": "string"
+    "temps_effets": {
+      "bsonType": "string",
+      "description": "Temps d'apparition des effets"
+    },
+    "autres_informations": {
+      "bsonType": "string",
+      "description": "Informations supplémentaires sur le produit"
     }
-  },
-  "required": [
-    "produit",
-    "marque",
-    "format",
-    "espèce",
-    "dominance",
-    "variété",
-    "génétique",
-    "lieu_de_culture",
-    "méthode_de_culture",
-    "type_de_mouture",
-    "cultivé_Québec",
-    "sachet_dhumidité",
-    "effets_potentiels",
-    "temps_appartion_effets"
-  ]
+  }
 }
 ```
 
 ### Explication des champs :
-- **produit** : Nom du produit (ex. "Moulu du BC").
-- **marque** : Marque du produit (ex. "Homestead Cannabis Supply").
-- **format** : Poids du produit en grammes (ex. 15).
-- **espèce** : Espèce de cannabis (ex. "Hybride").
-- **dominance** : Dominance génétique (ex. "Mélange").
-- **variété** : Variété spécifique (ex. "Mélange").
-- **génétique** : Détails sur la génétique (ex. "Slapz + Terple").
-- **lieu_de_culture** : Localisation de la culture (ex. "Delta, CB").
-- **méthode_de_culture** : Méthode utilisée pour cultiver (ex. "Culture hydroponique").
-- **type_de_mouture** : Type de mouture (ex. "Broyée finement").
-- **cultivé_Québec** : Indique si le produit est cultivé au Québec (true/false).
-- **sachet_dhumidité** : Indique si un sachet d'humidité est inclus (true/false).
-- **effets_potentiels** : Effets ressentis (ex. "Relaxation, détente").
-- **temps_appartion_effets** : Temps nécessaire pour ressentir les effets (ex. "90 secondes à 5 minutes après inhalation").
-- **message_avertissement** : Avertissements concernant la consommation.
-- **emballage** : Type d'emballage (ex. "Boîte de conserve hermétique").
-- **qualité** : Qualité du produit (ex. "AAAA").
-- **terpène** : Pourcentage de terpènes (ex. "2% - 4%"). 
+- **produit** : Nom du produit (ex: "Moulu du BC").
+- **marque** : Marque associée au produit (ex: "Homestead Cannabis Supply").
+- **format** : Format de l'emballage (ex: "15g").
+- **genetique** : Informations sur la génétique du produit (ex: "Slapz + Terple").
+- **qualite** : Qualité du produit (ex: "AAAA").
+- **emballage** : Type d'emballage utilisé (ex: "Boîte de conserve hermétique").
+- **effets_potentiels** : Effets que le produit peut avoir (ex: "Relaxation, détente").
+- **temps_effets** : Délai d'apparition des effets après consommation (ex: "90 secondes à 5 minutes après inhalation").
+- **autres_informations** : Informations supplémentaires pertinentes sur le produit.
 
-Ce schéma peut être utilisé pour structurer les données dans une base de données MongoDB, facilitant ainsi la gestion et la recherche d'informations sur les produits de cannabis.
+Ce schéma permet de structurer les données de manière riche tout en respectant la contrainte d'utiliser uniquement des types `string`.

@@ -1,52 +1,57 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits de cannabis préroulés.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Tous les types de données sont définis comme des chaînes de caractères (`string`).
 
 ```json
 {
   "type": "object",
   "properties": {
-    "produit": {
-      "type": "object",
-      "properties": {
-        "marque": { "type": "string" },
-        "nom": { "type": "string" },
-        "espece": { "type": "string", "enum": ["Indica", "Sativa", "Hybride"] },
-        "format": { "type": "string" },
-        "variete": { "type": "string" },
-        "genetique": { "type": "string" },
-        "couleur": { "type": "string" },
-        "description": { "type": "string" }
-      },
-      "required": ["marque", "nom", "espece", "format", "variete"]
-    },
-    "culture": {
-      "type": "object",
-      "properties": {
-        "lieu": { "type": "string" },
-        "methode": { "type": "string" },
-        "type_de_broyage": { "type": "string" },
-        "type_de_papier": { "type": "string" },
-        "humidite": { "type": "boolean" }
-      },
-      "required": ["lieu", "methode"]
-    },
-    "utilisation": {
-      "type": "object",
-      "properties": {
-        "effets": { "type": "array", "items": { "type": "string" } },
-        "delai_effets": { "type": "string" },
-        "message_avertissement": { "type": "string" }
-      },
-      "required": ["effets", "delai_effets"]
-    }
+    "marque": { "type": "string" },
+    "nom_du_produit": { "type": "string" },
+    "espece": { "type": "string" },
+    "format": { "type": "string" },
+    "variete": { "type": "string" },
+    "genetique": { "type": "string" },
+    "couleur": { "type": "string" },
+    "lieu_de_culture": { "type": "string" },
+    "methode_de_culture": { "type": "string" },
+    "type_de_broyage": { "type": "string" },
+    "type_de_papier": { "type": "string" },
+    "cultive_quebec": { "type": "string" },
+    "sachet_humidite": { "type": "string" },
+    "effets_potentiels": { "type": "string" },
+    "delai_apparition_effets": { "type": "string" },
+    "message_davertissement": { "type": "string" }
   },
-  "required": ["produit", "culture", "utilisation"]
+  "required": [
+    "marque",
+    "nom_du_produit",
+    "espece",
+    "format",
+    "variete",
+    "genetique",
+    "lieu_de_culture",
+    "methode_de_culture",
+    "effets_potentiels",
+    "delai_apparition_effets"
+  ]
 }
 ```
 
 ### Explication des champs :
+- **marque** : La marque du produit.
+- **nom_du_produit** : Le nom du produit.
+- **espece** : L'espèce de cannabis (ex. : Indica, Sativa).
+- **format** : Le format du produit (ex. : 3x0.5g).
+- **variete** : La variété spécifique du produit.
+- **genetique** : La génétique du produit.
+- **couleur** : La couleur de la cendre ou de la fleur.
+- **lieu_de_culture** : L'emplacement où le produit a été cultivé.
+- **methode_de_culture** : La méthode utilisée pour cultiver le produit.
+- **type_de_broyage** : Le type de broyage utilisé.
+- **type_de_papier** : Le type de papier utilisé pour le roulage.
+- **cultive_quebec** : Indique si le produit est cultivé au Québec.
+- **sachet_humidite** : Indique la présence d'un sachet d'humidité.
+- **effets_potentiels** : Les effets potentiels du produit.
+- **delai_apparition_effets** : Le délai d'apparition des effets après consommation.
+- **message_davertissement** : Un message d'avertissement concernant la consommation.
 
-- **produit** : Contient des informations sur le produit, y compris la marque, le nom, l'espèce, le format, la variété, la génétique, la couleur et une description.
-- **culture** : Détails sur l'endroit et la méthode de culture, le type de broyage, le type de papier utilisé et si un sachet d'humidité est inclus.
-- **utilisation** : Informations sur les effets potentiels, le délai d'apparition des effets et un message d'avertissement.
-
-Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sont correctement structurées.
+Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sont présentes et correctement formatées.

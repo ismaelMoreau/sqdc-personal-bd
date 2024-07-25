@@ -1,99 +1,69 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer une variété de détails sur les produits de cannabis, en mettant l'accent sur la richesse des données.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Ce schéma utilise uniquement des types 'string' pour les champs.
 
 ```json
 {
-  "type": "object",
+  "bsonType": "object",
+  "required": ["nom_du_produit", "producteur", "adresse_producteur", "type", "extraction", "temps_effet", "cultivé_au_quebec", "effets"],
   "properties": {
-    "produit": {
-      "type": "string"
+    "nom_du_produit": {
+      "bsonType": "string",
+      "description": "Nom du produit"
     },
-    "format": {
-      "type": "string"
+    "producteur": {
+      "bsonType": "string",
+      "description": "Nom du producteur"
     },
-    "espece": {
-      "type": "string"
+    "adresse_producteur": {
+      "bsonType": "string",
+      "description": "Adresse du producteur"
     },
-    "texture": {
-      "type": "string"
-    },
-    "couleur": {
-      "type": "string"
+    "type": {
+      "bsonType": "string",
+      "description": "Type de produit (ex: Sativa, Hybride)"
     },
     "extraction": {
-      "type": "string",
-      "enum": ["sans solvant", "avec solvant"]
+      "bsonType": "string",
+      "description": "Méthode d'extraction (ex: sans solvant)"
     },
-    "genetique": {
-      "type": "string"
+    "temps_effet": {
+      "bsonType": "string",
+      "description": "Temps d'apparition des effets"
     },
-    "effets_potentiels": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+    "cultivé_au_quebec": {
+      "bsonType": "string",
+      "description": "Indique si cultivé au Québec (Oui/Non)"
     },
-    "temps_appartion_effets": {
-      "type": "string",
-      "pattern": "^[0-9]+\\s*(secondes|minutes)$"
+    "effets": {
+      "bsonType": "string",
+      "description": "Effets potentiels du produit"
     },
-    "cultive_au_quebec": {
-      "type": "boolean"
+    "couleurs": {
+      "bsonType": "string",
+      "description": "Couleurs internes et externes"
     },
-    "fournisseur": {
-      "type": "string"
+    "texture": {
+      "bsonType": "string",
+      "description": "Texture du produit"
     },
-    "aromes_naturels": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "terpenes": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "instructions_utilisation": {
-      "type": "string"
-    },
-    "effets_indesirables": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+    "méthode_de_culture": {
+      "bsonType": "string",
+      "description": "Méthode de culture utilisée"
     }
-  },
-  "required": [
-    "produit",
-    "format",
-    "espece",
-    "texture",
-    "couleur",
-    "extraction",
-    "effets_potentiels",
-    "temps_appartion_effets",
-    "cultive_au_quebec"
-  ]
+  }
 }
 ```
 
 ### Explication des champs :
-
-- **produit** : Nom du produit.
-- **format** : Quantité ou format du produit (ex. 1g, 3g).
-- **espece** : Type de cannabis (ex. Sativa, Indica, Hybride).
+- **nom_du_produit** : Le nom du produit (ex: Kizoz QC Kief).
+- **producteur** : Le nom de l'entreprise productrice.
+- **adresse_producteur** : Localisation de l'entreprise.
+- **type** : Type de cannabis (ex: Sativa, Hybride).
+- **extraction** : Méthode d'extraction utilisée.
+- **temps_effet** : Délai d'apparition des effets après consommation.
+- **cultivé_au_quebec** : Indication de la provenance du produit.
+- **effets** : Description des effets ressentis.
+- **couleurs** : Couleurs observées dans le produit.
 - **texture** : Description de la texture du produit.
-- **couleur** : Couleur du produit.
-- **extraction** : Méthode d'extraction utilisée (sans solvant ou avec solvant).
-- **genetique** : Informations sur la génétique de la variété.
-- **effets_potentiels** : Liste des effets potentiels du produit.
-- **temps_appartion_effets** : Temps nécessaire pour que les effets apparaissent.
-- **cultive_au_quebec** : Indique si le produit est cultivé au Québec.
-- **fournisseur** : Nom du fournisseur ou de la marque.
-- **aromes_naturels** : Liste des arômes naturels présents dans le produit.
-- **terpenes** : Liste des terpènes présents dans le produit.
-- **instructions_utilisation** : Méthode d'utilisation recommandée.
-- **effets_indesirables** : Liste des effets indésirables potentiels.
+- **méthode_de_culture** : Méthode de culture (ex: intérieur, hydroponique).
 
-Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sur les produits de cannabis sont correctement enregistrées.
+Ce schéma permet de structurer les données tout en conservant une richesse d'informations.

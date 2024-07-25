@@ -1,4 +1,4 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits à base de cannabis, en mettant l'accent sur la richesse des données.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Ce schéma utilise uniquement des types 'string' pour les champs.
 
 ```json
 {
@@ -8,45 +8,24 @@ Voici un schéma de validation MongoDB basé sur les informations extraites des 
       "type": "string"
     },
     "format": {
-      "type": "object",
-      "properties": {
-        "quantite": {
-          "type": "integer"
-        },
-        "unite": {
-          "type": "string"
-        },
-        "dosage": {
-          "type": "number"
-        }
-      },
-      "required": ["quantite", "unite", "dosage"]
+      "type": "string"
     },
     "effets_potentiels": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "type": "string"
     },
     "temps_appartion_effets": {
       "type": "string"
     },
     "ingredients": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "methode_extraction": {
       "type": "string"
     },
-    "producteur": {
+    "extraction": {
       "type": "string"
     },
-    "fabrique_a": {
+    "ratio": {
       "type": "string"
     },
-    "mise_en_garde": {
+    "marque": {
       "type": "string"
     }
   },
@@ -54,25 +33,19 @@ Voici un schéma de validation MongoDB basé sur les informations extraites des 
     "produit",
     "format",
     "effets_potentiels",
-    "temps_appartion_effets",
-    "ingredients",
-    "methode_extraction",
-    "producteur",
-    "fabrique_a"
+    "temps_appartion_effets"
   ]
 }
 ```
 
 ### Explication des champs :
+- **produit** : Nom du produit (ex. "CBD 50 Capsules").
+- **format** : Détails sur le format (ex. "30 Capsules, 50mg de CBD/unité").
+- **effets_potentiels** : Effets attendus du produit (ex. "Calme et relaxant").
+- **temps_appartion_effets** : Délai d'apparition des effets (ex. "Jusqu'à 60 minutes après ingestion").
+- **ingredients** : Liste des ingrédients (ex. "Huile de chanvre biologique, gélatine...").
+- **extraction** : Méthode d'extraction utilisée (ex. "Extraction par CO2").
+- **ratio** : Ratio THC:CBD si applicable (ex. "1:1").
+- **marque** : Nom de la marque (ex. "Velada").
 
-- **produit** : Nom du produit.
-- **format** : Détails sur le format du produit, incluant la quantité, l'unité (ex. capsules, mg) et le dosage par unité.
-- **effets_potentiels** : Liste des effets potentiels associés au produit.
-- **temps_appartion_effets** : Temps estimé pour que les effets se manifestent après ingestion.
-- **ingredients** : Liste des ingrédients contenus dans le produit.
-- **methode_extraction** : Méthode utilisée pour extraire les composants actifs du cannabis.
-- **producteur** : Nom du producteur du produit.
-- **fabrique_a** : Lieu de fabrication du produit.
-- **mise_en_garde** : Avertissements ou précautions à prendre lors de la consommation du produit.
-
-Ce schéma peut être utilisé pour structurer les données dans une base de données MongoDB, facilitant ainsi la gestion et la recherche d'informations sur les produits à base de cannabis.
+Ce schéma permet de structurer les données tout en conservant une certaine flexibilité pour différents produits.

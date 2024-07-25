@@ -1,72 +1,68 @@
-Voici un schéma de validation MongoDB basé sur les informations extraites des images fournies. Ce schéma est conçu pour capturer les détails des produits de haschich, en mettant l'accent sur la richesse des données.
+Voici un schéma de validation MongoDB basé sur les informations des images fournies. Tous les types de données sont définis comme des chaînes de caractères (`string`).
 
 ```json
 {
-  "bsonType": "object",
-  "required": ["nom", "format", "variete", "couleur_interne", "couleur_externe", "texture", "methode_extraction", "effets_potentiels", "temps_apparition"],
+  "type": "object",
   "properties": {
-    "nom": {
-      "bsonType": "string",
-      "description": "Nom du produit"
+    "nomProduit": {
+      "type": "string"
     },
     "format": {
-      "bsonType": "double",
-      "description": "Poids du produit en grammes"
+      "type": "string"
     },
     "variete": {
-      "bsonType": "string",
-      "description": "Variété de cannabis utilisée"
+      "type": "string"
     },
-    "couleur_interne": {
-      "bsonType": "string",
-      "description": "Couleur interne du produit"
+    "couleurInterne": {
+      "type": "string"
     },
-    "couleur_externe": {
-      "bsonType": "string",
-      "description": "Couleur externe du produit"
+    "couleurExterne": {
+      "type": "string"
     },
     "texture": {
-      "bsonType": "string",
-      "description": "Texture du produit"
+      "type": "string"
     },
-    "methode_extraction": {
-      "bsonType": "string",
-      "description": "Méthode d'extraction utilisée"
+    "methodeTransformation": {
+      "type": "string"
     },
-    "effets_potentiels": {
-      "bsonType": "array",
-      "items": {
-        "bsonType": "string"
-      },
-      "description": "Liste des effets potentiels"
+    "effetsPotentiels": {
+      "type": "string"
     },
-    "temps_apparition": {
-      "bsonType": "string",
-      "description": "Temps d'apparition des effets après inhalation"
+    "tempsApparitionEffets": {
+      "type": "string"
     },
-    "origine": {
-      "bsonType": "string",
-      "description": "Lieu de culture ou de fabrication"
+    "lieuCulture": {
+      "type": "string"
     },
-    "avertissement": {
-      "bsonType": "string",
-      "description": "Message d'avertissement concernant la consommation"
+    "messageAvertissement": {
+      "type": "string"
     }
-  }
+  },
+  "required": [
+    "nomProduit",
+    "format",
+    "variete",
+    "couleurInterne",
+    "couleurExterne",
+    "texture",
+    "methodeTransformation",
+    "effetsPotentiels",
+    "tempsApparitionEffets"
+  ]
 }
 ```
 
 ### Explication des champs :
-- **nom** : Le nom du produit de haschich.
-- **format** : Le poids du produit, généralement en grammes.
-- **variete** : La variété de cannabis utilisée pour produire le haschich.
-- **couleur_interne** : La couleur visible à l'intérieur du produit.
-- **couleur_externe** : La couleur visible à l'extérieur du produit.
-- **texture** : La texture du produit, indiquant s'il est malléable ou résineux.
-- **methode_extraction** : La méthode utilisée pour extraire le haschich (ex. : sans solvant, tamisage à sec).
-- **effets_potentiels** : Une liste des effets que le produit peut avoir sur l'utilisateur.
-- **temps_apparition** : Le temps nécessaire pour que les effets se manifestent après inhalation.
-- **origine** : Le lieu où le produit a été cultivé ou fabriqué.
-- **avertissement** : Un message d'avertissement concernant la consommation du produit.
+- **nomProduit** : Nom du produit (ex. "Hash #1").
+- **format** : Poids ou format du produit (ex. "1 g").
+- **variete** : Variété de la plante (ex. "OG Kush").
+- **couleurInterne** : Couleur interne du produit (ex. "brun clair").
+- **couleurExterne** : Couleur externe du produit (ex. "brun foncé").
+- **texture** : Texture du produit (ex. "malléable à résineux").
+- **methodeTransformation** : Méthode utilisée pour transformer le produit (ex. "sans solvant").
+- **effetsPotentiels** : Effets potentiels du produit (ex. "calme, relaxation").
+- **tempsApparitionEffets** : Temps nécessaire pour que les effets apparaissent (ex. "90 secondes à 5 minutes").
+- **lieuCulture** : Lieu où le produit a été cultivé (ex. "Québec").
+- **messageAvertissement** : Avertissements concernant la consommation (ex. "Ne conduisez pas..."). 
 
-Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB, garantissant que toutes les informations pertinentes sur les produits de haschich sont correctement enregistrées.
+Ce schéma peut être utilisé pour valider les documents dans une base de données MongoDB.
